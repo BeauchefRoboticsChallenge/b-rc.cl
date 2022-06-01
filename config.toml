@@ -1,0 +1,6 @@
+baseURL = "https://b-rc.cl/"
+languageCode = "es-cl"
+title = "BRC 2022"
+
+
+theme = "devfest-theme-hugo"
