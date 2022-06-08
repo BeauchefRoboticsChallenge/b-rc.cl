@@ -1,10 +1,8 @@
 ---
-title: Home
+title: EL HOMECITO
 icon: home
 
-menu:
-  main:
-    weight: -1
+
 
 ---
 
