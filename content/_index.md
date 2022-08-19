@@ -1,15 +1,22 @@
 ---
-title: EL HOMECITO
+title: La pag de yo
 icon: home
-
-
-
 ---
 
+Qué es, cuando es
+Fechas importantes
+Ligas (bases)
+Cursos asociados
+Quienes somos, colaboradores
+Contacto
 
-{{% jumbo img="/images/backgrounds/back-0.jpg" imgLabel="Beauchef Robotics Challenge 2022" %}}
+{{% jumbo img="images/logo.png" imgLabel="Beauchef Robotics Challenge 2022" %}}
 
-## 45 de Noviembre • 2022
+¡Bienvenidx a la tercera versión de la BRC!
+
+¡Un festival para celebrar la robótica, ingeniería y tecnología!
+
+## 9 y 10 de Noviembre • 2022
 ### Campus Beauchef - U de Chile
 
 {{% /jumbo %}}
@@ -17,11 +24,29 @@ icon: home
 
 
 {{% home-info  class="primary" %}}
-## Qué es la BRC ?
+## ¿Qué es la BRC ?
+Beauchef Robotics Challenge es la competencia de robótica de la FCFM que reúne a escolares, estudiantes de universidad y profesionales en torno al aprendizaje y desarrollo de competencias en electrónica, fabricación digital y programación. 
 
-Beauchef Robotics Challenge es una competencia bacán bacán
+## ¿Cuándo y dónde se realizará?
+Se realizará en el contexto del Festival de Róbotica, durante los días COMPLETAR bajo el Auditorio COMPLETAR en Beauchef 851, Santiago.
+
 {{% /home-info %}}
 
+
+{{% home-info  class="primary" %}}
+
+## Fechas importantes
+- 08 de Agosto Publicación equipos becados
+- 10 Ago a 21 Sept - Talleres semanales para becados
+- 22 Ago - Inscripción a competencia, todas las ligas
+- 07 Oct - Hackatón I
+- 21 Oct - Hackatón II
+- 05 al 10 de Noviembre - Festival de Robótica
+    -  05 y 06 Nov - la otra competencia
+    - 07 y 08 Nov - Charlas
+    - 09 y 10 Nov - COMPETENCIA BRC
+
+{{% /home-info %}}
 
 
 <!-- Youtube section  -->
@@ -48,29 +73,9 @@ Beauchef Robotics Challenge es una competencia bacán bacán
 
 {{% /home-subscribe %}}
 
-
-<!-- Venue/Location -->
-{{% home-location
-    image="/images/map.jpg"
-    address="11 Espl. Compans Caffarelli, 31000 Toulouse"
-    latitude="43.6110956"
-    longitude="1.4332799" %}}
-
-## The venue
-
-### Centre de Congrès Pierre Baudis
-
-The Centre de Congrès Pierre Baudis is a modern place of exchange,
-located on a privileged location,
-in the immediate vicinity of the centre of Toulouse and in a green environment.
-
-{{% /home-location %}}
-
-
-
 <!-- Gallery -->
 
-{{% album images="/images/album/2018/_25A9313.jpg,/images/album/2018/_25A9386.jpg,/images/album/2018/_25A9671.jpg,/images/album/2018/_25A9334.jpg,/images/album/2018/_25A9282.jpg,/images/album/2018/_25A9612.jpg,/images/album/2018/_25A9452.jpg,/images/album/2018/_25A9628.jpg" %}}
+{{% album images="images/logo.png" %}}
 
 ### Some pictures of the **DevFest Toulouse 2018** with the 👾 _retro-gaming_ theme.
 
@@ -83,6 +88,6 @@ in the immediate vicinity of the centre of Toulouse and in a green environment.
 
 <!-- Partners --> 
 
-{{% partners categories="platinium,gold,startup,soutien,communautes" %}}
-## Partners
+{{% partners categories="platinium,gold,soutien,media,communautes" %}}
+# Partners
 {{% /partners %}}
