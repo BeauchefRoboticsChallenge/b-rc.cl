@@ -1,23 +1,1243 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BRC 2022</title>
-    <link rel="stylesheet" href="/assets/styles.css">
+  <head>
+    <!--
+New Event
+http://www.templatemo.com/tm-486-new-event
+-->
+    <title>Beauchef Robotics Challenge</title>
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
 
-</head>
-<body>
-    <div class="container">
-        <img src="/static/logo.svg" alt="Beauchef Robotics Challenge">
-        <h3>&#10024 Se vienen cositas &#10024</h2>
-        <div class="socials">
-            <a href="https://www.instagram.com/brc.chile/">
-                <img src="/static/ig.svg" class="logo" alt="">
-                <span>brc.chile</span>
-            </a>
-        </div>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/animate.css" />
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="assets/css/owl.theme.css" />
+    <link rel="stylesheet" href="assets/css/owl.carousel.css" />
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,500,600"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-86895502-2"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-86895502-2");
+    </script>
+  </head>
+  <body data-spy="scroll" data-offset="50" data-target=".navbar-collapse">
+    <!-- =========================
+     PRE LOADER
+============================== -->
+    <div class="preloader">
+      <div class="sk-rotating-plane"></div>
     </div>
-</body>
+
+    <!-- =========================
+     NAVIGATION LINKS
+============================== -->
+    <div class="navbar navbar-fixed-top custom-navbar" role="navigation">
+      <div class="container">
+        <!-- navbar header -->
+        <div class="navbar-header">
+          <button
+            class="navbar-toggle"
+            data-toggle="collapse"
+            data-target=".navbar-collapse"
+          >
+            <span class="icon icon-bar"></span>
+            <span class="icon icon-bar"></span>
+            <span class="icon icon-bar"></span>
+          </button>
+          <a href="#intro">
+            <img
+              src="static/images/logo.png"
+              style="height: inherit;"
+              class="img-responsive"
+              alt="BRC"
+            />
+          </a>
+        </div>
+
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#intro" class="smoothScroll">Inicio</a></li>
+            <li><a href="#overview" class="smoothScroll">BRC</a></li>
+            <li><a href="#program" class="smoothScroll">Calendario</a></li>
+            <li><a href="#leagues" class="smoothScroll">Ligas</a></li>
+            <li><a href="#register" class="smoothScroll">Inscripción</a></li>
+            <li><a href="#faq" class="smoothScroll">FAQ</a>
+            </li>
+            <li><a href="#sponsors" class="smoothScroll">Organizadores</a></li>
+            <!-- <li><a href="#contact" class="smoothScroll">Contact</a></li> -->
+            <!-- <li><a href="https://www.robotcontest.cl/">Evento Colaborador</a></li> -->
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- =========================
+    INTRO SECTION
+============================== -->
+    <section id="intro" class="parallax-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12">
+            <h3 class="wow fadeInUp" data-wow-delay="0.9s">
+              10 al 13 de Noviembre del 2022
+            </h3>
+            <h1 class="wow fadeInUp" data-wow-delay="1.6s">
+              Festival de Robótica
+            </h1>
+            <a
+              href="#overview"
+              class="btn btn-lg btn-default smoothScroll wow fadeInUp hidden-xs"
+              data-wow-delay="2.3s"
+              >¿QUÉ ES ESTO?</a
+            >
+            <a
+              href="#register"
+              class="btn btn-lg btn-danger smoothScroll wow fadeInUp"
+              data-wow-delay="2.3s"
+              >INSCRIBIRME</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+    OVERVIEW SECTION
+============================== -->
+    <section id="overview" class="parallax-section">
+      <div class="container">
+        <div class="row">
+          <div class="wow fadeInUp col-md-6 col-sm-6" data-wow-delay="0.9s">
+            <img
+              src="static/images/brc-2019.JPG"
+              class="img-responsive"
+              alt="Overview"
+            />
+          </div>
+
+          <div class="wow fadeInUp col-md-6 col-sm-6" data-wow-delay="0.6s">
+            <h3>BRC | Competencia de Robótica</h3>
+            <p>
+              
+              El Beauchef Robotics Challenge (BRC) reúne a escolares, estudiantes de universidad y profesionales 
+              apasionados por la robótica para conocer más sobre ellos mediante charlas y exposiciones demostrativas.
+              Además, nuestra principal actividad, <b>una competencia de robots Velocistas y Battlebots!</b>
+
+              Nuestro objetivo es motivar a las personas a introducirse y experimentar de la electrónica, fabricación digital
+              y programación dirigido al desarrollo y contrucción de robots. 
+              
+            </p>
+            <p>
+              Junto a <a href="https://www.robotcontest.cl/">Robot Contest</a> organizamos el Festival de Robótica que durará 5 días de mucha adrenalina y diversión. 
+              ¡Tendremos competencias de robots, charlas y exposiciones!
+            
+            </p>
+          </div>
+
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+    DETAIL SECTION
+============================== -->
+    <section id="detail" class="parallax-section">
+      <div class="container">
+        <div class="row">
+          <div class="wow fadeInLeft col-md-4 col-sm-4" data-wow-delay="0.3s">
+            <i class="fa fa-calendar"></i>
+            <h3> Fecha </h3>
+            <pk>
+              Festival de Robótica: <pw>10 al 13 de noviembre</pw>
+              Competencia de Robots BRC: <pw>10 y 11 de noviembre</pw>
+            </pk>
+          </div>
+
+          <div class="wow fadeInUp col-md-4 col-sm-4" data-wow-delay="0.6s">
+            <i class="fa fa-map-marker"></i>
+            <h3>Lugar</h3>
+            <pk>
+              <a href="https://www.google.com/maps/place/Av.+Beauchef+851,+Santiago,+Regi%C3%B3n+Metropolitana/@-33.4578007,-70.6663891,17z/data=!3m1!4b1!4m5!3m4!1s0x9662c5034361e5f5:0x38f3d62ee43b1630!8m2!3d-33.4578052!4d-70.6642004">Beauchef 851, Santiago</a>
+            </pk>
+          </div>
+
+          <div class="wow fadeInRight col-md-4 col-sm-4" data-wow-delay="0.9s">
+            <i class="fa fa-star"></i>
+            <h3>Actividades</h3>
+            <pk>
+              ¡Competencia de Robots! Acompañado de Charlas y una Feria robótica.
+            </pk>
+          </div>
+        </div>
+      </div>
+    </section> 
+
+<!-- =========================
+    PROGRAM SECTION (/)
+============================== -->
+
+<section id="program" class="parallax-section">
+  <div class="container">
+    <div class="row">
+      <div class="wow fadeInUp col-md-12 col-sm-12" data-wow-delay="0.6s">
+        <div class="section-title">
+          <h2>FESTIVAL DE ROBÓTICA</h2>
+          <p>
+            ¡Te esperamos con todo!
+          </p>
+        </div>
+      </div>
+
+      <div class="wow fadeInUp col-md-10 col-sm-10" data-wow-delay="0.9s">
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs" role="tablist">
+          <li class="active">
+            <a
+              href="#wednesday"
+              aria-controls="wednesday"
+              role="tab"
+              data-toggle="tab"
+              >Miércoles 9</a
+            >
+          </li>
+          <li>
+            <a
+              href="#thursday"
+              aria-controls="thursday"
+              role="tab"
+              data-toggle="tab"
+              >Jueves 10</a
+            >
+          </li>
+          <li>
+            <a
+              href="#friday"
+              aria-controls="friday"
+              role="tab"
+              data-toggle="tab"
+              >Viernes 11</a
+            >
+          </li>
+          <li>
+            <a
+              href="#saturday"
+              aria-controls="saturday"
+              role="tab"
+              data-toggle="tab"
+              >Sábado 12</a
+            >
+          </li>
+          <li>
+            <a
+              href="#sunday"
+              aria-controls="sunday"
+              role="tab"
+              data-toggle="tab"
+              >Domingo 13</a
+            >
+          </li>
+        </ul>
+
+        <!-- tab panes -->
+        <div class="tab-content">
+          <div role="tabpanel" class="tab-pane active" id="wednesday">
+            <!-- program speaker here -->
+            
+            <div class="col-md-10 col-sm-10">
+              <h6>
+                <span><i class="fa fa-map-marker"></i> Patio FCFM Beauchef 851</span>
+              </h6>
+              <h7>Competencia de Robots BRC </h7>
+              <h4></h4>
+              <p></p>
+            </div>
+
+            <!-- program divider -->
+            <div class="program-divider col-md-12 col-sm-12"></div>
+
+          
+            <div class="col-md-10 col-sm-10">
+              <h6>
+                <span><i class="fa fa-map-marker"></i> Patio FCFM Beauchef 851</span>
+              </h6>
+              <h7>
+                Feria de Robótica 
+              </h7>
+              <h4> Próximamente más detalles </h4>
+              <p>
+                
+              </p>
+            </div>
+
+          </div>
+
+          <div role="tabpanel" class="tab-pane" id="thursday">
+            <!-- program speaker here -->
+            
+            <div class="col-md-10 col-sm-10">
+              <h6>
+                <span><i class="fa fa-map-marker"></i> Patio FCFM Beauchef 851</span>
+              </h6>
+              <h7>Competencia de Robots BRC (Continuación) <h7>
+              <h4>
+              
+              </h4>
+              <p>
+                
+              </p>
+            </div>
+
+            <!-- program divider -->
+            <div class="program-divider col-md-12 col-sm-12"></div>
+
+            <!-- program speaker here -->
+            
+            <div class="col-md-10 col-sm-10">
+              <h6>
+                <span><i class="fa fa-map-marker"></i> Patio FCFM Beauchef 851</span>
+              </h6>
+              <h7>Feria de Robótica</h7>
+              <h4>
+                Próximamente más detalles
+              </h4>
+              <p>
+                
+              </p>
+            </div>
+
+          
+          </div>
+
+          <div role="tabpanel" class="tab-pane" id="friday">
+            <!-- program speaker here -->
+           
+            <div class="col-md-10 col-sm-10">
+              <h6>
+                <span><i class="fa fa-map-marker"></i> Auditorio Enrique d'Etigny</span>
+              </h6>
+              <h7>
+                Charlas
+              </h7>
+              <h4> 
+                Próximamente más detalles
+              </h4>
+              <p>
+               
+              </p>
+            </div>
+
+            <!-- program divider -->
+            <div class="program-divider col-md-12 col-sm-12"></div>
+
+            <!-- program speaker here -->
+            
+            <div class="col-md-10 col-sm-10">
+              <h6>
+                <span><i class="fa fa-map-marker"></i> Edificio Poniente Beauchef 851</span>
+              </h6>
+              <h7>Test Run ACRC</h7>
+              <h4> All Chile Robot Contest (ACRC)</h4>
+              <p>
+                
+              </p>
+              
+            </div>
+
+            
+
+
+          </div>
+
+          <div role="tabpanel" class="tab-pane" id="saturday">
+            <!-- program speaker here -->
+           
+            <div class="col-md-10 col-sm-10">
+              <h6>
+                <span><i class="fa fa-map-marker"></i> Edificio Poniente Beauchef 851</span>
+              </h6>
+              <h7>Competencia de Robots  All Chile Robot Contest (ACRC)</h7>
+              <h4>
+                <a
+                rel="nofollow"
+                href="https://www.robotcontest.cl/"
+                target="_parent"
+                >MÁS DETALLES</a>
+              </h4>
+              <p>
+                
+              </p>
+            </div>
+
+          </div>
+
+            <div role="tabpanel" class="tab-pane" id="sunday">
+              <!-- program speaker here -->
+              
+              <div class="col-md-10 col-sm-10">
+                <h6>
+                  <span><i class="fa fa-map-marker"></i> Edificio Poniente Beauchef 851</span>
+                </h6>
+                <h7>Competencia de Robots All Chile Robot Contest (ACRC)</h7>
+                <h4>
+                  <a
+                  rel="nofollow"
+                  href="https://www.robotcontest.cl/"
+                  target="_parent"
+                  >MÁS DETALLES</a>
+                </h4>
+                <p>
+                  
+                </p>
+              </div>
+
+            
+          </div>
+
+         
+            
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section> 
+
+
+<!-- =========================
+    LEAGUES SECTION
+============================== -->
+
+<section id="leagues" class="parallax-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-sm-12 wow fadeInUp">
+        <div class="section-title">
+          <h2>lIGAS DE LA COMPETENCIA DE ROBÓTICA</h2>
+          <h3>
+            Are you ready?
+            
+          </h3>
+        </div>
+      </div>
+
+
+  <div class="wow fadeInUp col-md-12 col-sm-12" data-wow-delay="0.6s">
+    
+  <div class="row">
+    <div class="wow fadeInUp col-md-6 col-sm-6" data-wow-delay="0.6s">
+      <h3>LIGA VELOCISTAS</h3>
+      <p>
+        ¡El robot más veloz se llevará la gloria!
+        
+        El robot deberá seguir, de manera autónoma, la linea blanca de un circuito cerrado 
+        en el menor tiempo posible.
+      </p>
+      <p>
+        Se encuentran 3 categorías:
+      </p>
+
+        <ul>
+          <li><b>Categoría Colegios</b><ps>  (PRIMERA VERSIÓN)</ps></li>
+          <p>Colegios Invitados: 
+                 Colegio Alberto Blest Gana, 
+                 Liceo Experimental Manuel Salas y 
+                 Fundación Mustakis</p>
+            
+          
+          <li><b>Categoría Universitarios</b></li>
+              <p>
+                Equipos de estudiantes de pregrado de cualquier Universidad del país.
+              </p> 
+              
+          <li><b>Categoría OPEN</b></li>
+              <p>
+                Equipos de cualquier procedencia que cumplen con las bases.
+              </p> 
+         </ul>
+
+
+      
+      <div class="wow fadeInRight col-md-3 col-sm-3" data-wow-delay="0.9s">
+        <a 
+           href="https://drive.google.com/file/d/1OngjdqZ7OJ4IxFsWigKq25yRm48ubPGN/view" 
+           class="btn btn-lg btn-danger smoothScroll wow fadeInUp">BASES LIGA VELOCISTAS</a>
+      </div>
+
+    </div>
+
+    <div class="wow fadeInRight col-md-6 col-sm-6" data-wow-delay="0.9s">
+      <img
+        src="static/images/ligas-velocista.png"
+        class="img-responsive"
+        alt="Overview"
+      />
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="wow fadeInLeft col-md-6 col-sm-6" data-wow-delay="0.6s">
+      <h3 style="text-align: left">LIGA BATTLEBOTS</h3>
+      <p>
+        El robot que cause el mayor daño mecánico a su oponente intentando deshabilitar
+        sus mecanismos de ataque y/o movilización, o 
+        con el mejor método de defensa se lleva la gloria.  
+      </p>
+
+      <p>
+        Se encuentran 2 categorías:
+        <ul>
+          <li><b>Categoría Módulo</b></li>
+              <p>
+                Equipos de estudiantes universitarios exclusivamente del curso 
+                Módulo Interdisciplinario de la Universidad de Chile
+              </p> 
+              
+          <li><b>Categoría OPEN</b></li>
+              <p>
+                Equipos de cualquier procedencia que cumplen con las bases.
+              </p> 
+         </ul>
+      </p>
+
+      <div class="wow fadeInRight col-md-3 col-sm-3" data-wow-delay="0.9s">
+        <a 
+           href="https://drive.google.com/file/d/1t4ERoA5AzJMz1CQHDnE_3yZ9DZ42K4B9/view" 
+           class="btn btn-lg btn-danger smoothScroll wow fadeInUp">BASES LIGA BATTLEBOTS</a>
+      </div>
+
+    </div>
+
+    <div class="wow fadeInRight col-md-6 col-sm-6" data-wow-delay="0.9s">
+      <img
+        src="static/images/ligas-battlebot.png"
+        class="img-responsive"
+        alt="Overview"
+      />
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="wow fadeInLeft col-md-6 col-sm-6" data-wow-delay="0.6s">
+      <h3>LIGA INDUSTRIAL</h3>
+      <ps>  (PRIMERA VERSIÓN)</ps>
+      <p>
+        El desafío consta del control de brazos robóticos del proyecto 
+        MY LITTLE FACTORY de la FCFM para el cumplimiento de desafíos en una línea industrial.
+      </p>
+
+      <p>
+        Esta Liga es exclusivamente para estudiantes de la FCFM. Las bases se indicarán en los
+        cursos correspondientes.
+      </p>
+    
+    </div>
+
+    <div class="wow fadeInRight col-md-6 col-sm-6" data-wow-delay="0.9s">
+      <img
+        src="static/images/ligas-industrial.png"
+        class="img-responsive"
+        alt="Overview"
+      />
+    </div>
+  </div>
+
+
+
+    </div>
+  </div>
+</section>
+
+<!-- =========================
+    CATEGORIES
+============================== -->
+
+
+<!-- =====
+<section class="categories-robot" id="categories">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 offset-lg-3">
+        <div class="section-heading">
+          <h6>OUR COURSES</h6>
+          <h4>What You Can <em>Learn</em></h4>
+          <p>You just think about TemplateMo whenever you need free CSS templates for your business website</p>
+        </div>
+      </div>
+      <div class="col-lg-12">
+        <div class="naccs">
+          <div class="tabs">
+            <div class="row">
+              <div class="col-lg-3">
+                <div class="menu">
+                  <div class="active gradient-border"><span>Web Development</span></div>
+                  <div class="gradient-border"><span>Graphic Design</span></div>
+                  <div class="gradient-border"><span>Web Design</span></div>
+                  <div class="gradient-border"><span>WordPress</span></div>
+                </div>
+              </div>
+              <div class="col-lg-9">
+                <ul class="nacc">
+                  <li class="active">
+                    <div>
+                      <div class="left-image">
+                        <img src="images/intro-bg__.jpg" alt="">
+                        <div class="price"><h6>$128</h6></div>
+                      </div>
+                      <div class="right-content">
+                        <h4>Web Development</h4>
+                        <p>Did you know that you can visit <a rel="nofollow" href="https://www.toocss.com/" target="_blank">TooCSS website</a> for latest listing of HTML templates and a variety of useful templates. 
+                        <br><br>You just need to go and visit that website right now. IF you have any suggestion or comment about this template, you can feel free to go to contact page for our email address.</p>
+                        <span>36 Hours</span>
+                        <span>4 Weeks</span>
+                        <span class="last-span">3 Certificates</span>
+                        <div class="text-button">
+                          <a href="contact-us.html">Subscribe Course</a>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div>
+                      <div class="left-image">
+                        <img src="assets/images/courses-02.jpg" alt="">
+                        <div class="price"><h6>$156</h6></div>
+                      </div>
+                      <div class="right-content">
+                        <h4>Creative Graphic Design</h4>
+                        <p>You are not allowed to redistribute this template ZIP file on any other website without a permission from us.<br><br>There are some unethical people on this world copied and reposted our templates without any permission from us. Their Karma will hit them really hard. Yeah!</p>
+                        <span>48 Hours</span>
+                        <span>6 Weeks</span>
+                        <span class="last-span">1 Certificate</span>
+                        <div class="text-button">
+                          <a href="contact-us.html">Subscribe Course</a>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div>
+                      <div class="left-image">
+                        <img src="assets/images/courses-03.jpg" alt="">
+                        <div class="price"><h6>$184</h6></div>
+                      </div>
+                      <div class="right-content">
+                        <h4>Web Design</h4>
+                        <p>Quinoa roof party squid prism sustainable letterpress cray hammock tumeric man bun mixtape tofu subway tile cronut. Deep v ennui subway tile organic seitan.<br><br>Kogi VHS freegan bicycle rights try-hard green juice probably haven't heard of them cliche la croix af chillwave.</p>
+                        <span>28 Hours</span>
+                        <span>4 Weeks</span>
+                        <span class="last-span">1 Certificate</span>
+                        <div class="text-button">
+                          <a href="contact-us.html">Subscribe Course</a>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div>
+                      <div class="left-image">
+                        <img src="assets/images/courses-04.jpg" alt="">
+                        <div class="price"><h6>$76</h6></div>
+                      </div>
+                      <div class="right-content">
+                        <h4>WordPress Introduction</h4>
+                        <p>Quinoa roof party squid prism sustainable letterpress cray hammock tumeric man bun mixtape tofu subway tile cronut. Deep v ennui subway tile organic seitan.<br><br>Kogi VHS freegan bicycle rights try-hard green juice probably haven't heard of them cliche la croix af chillwave.</p>
+                        <span>48 Hours</span>
+                        <span>4 Weeks</span>
+                        <span class="last-span">2 Certificates</span>
+                        <div class="text-button">
+                          <a href="contact-us.html">Subscribe Course</a>
+                        </div>
+                      </div>
+                    </div>
+                    </li>
+                  </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+===== -->
+
+
+
+
+  
+    <!-- =========================
+   REGISTER SECTION
+============================== -->
+    <section id="register" class="parallax-section">
+      <div class="container">
+        <div class="row">
+          <div class="wow fadeInUp col-md-4 col-sm-4" data-wow-delay="0.2s">
+            <h2>Inscripciones | Liga Velocista</h2>
+            <p>
+              
+              La inscripción a la Liga Velocistas es totalmente gratuita. Una vez que
+              envíen el formulario recibirán un mail de confirmación dentro de dos días.
+
+            </p>
+            <p>
+              La inscripción estará habilitada desde el 22 de agosto hasta el 16 de octubre del 2022.
+              Recuerda leer las
+              <a href="https://drive.google.com/file/d/1OngjdqZ7OJ4IxFsWigKq25yRm48ubPGN/view">Bases.</a>
+
+            </p>
+            
+            <h4>
+              <a
+              rel="nofollow"
+              href="https://forms.gle/EFTBFKE5QuXNYdZW8"
+              target="_parent"
+              >Expandir el formulario</a>
+            </h4>
+          </div>
+
+          <div class="wow fadeInUp col-md-8 col-sm-8" data-wow-delay="0.4s">
+            <iframe
+              src="https://forms.gle/eU3ckiTox9YXfPQ38"
+              width="100%"
+              height="500"
+              frameborder="0"
+              marginheight="0"
+              marginwidth="0"
+              >Cargando…</iframe
+            >
+          </div>
+
+          <div class="col-md-1"></div>
+        </div>
+      </div>
+ 
+      <div class="container">
+        <div class="row">
+          <div class="wow fadeInUp col-md-4 col-sm-4" data-wow-delay="0.2s">
+            <h2>Inscripciones | Liga Battlebot</h2>
+            <p>
+              
+              La inscripción a la Liga Battlebots es totalmente gratuita. Una vez que
+              envíen el formulario recibirán un mail de confirmación dentro de dos días.
+            </p>
+            
+          </div>
+
+          <div class="wow fadeInUp col-md-8 col-sm-8" data-wow-delay="0.4s">
+            <iframe
+              src="https://forms.gle/faW1sUZGQkSG4fEn8"
+              width="100%"
+              height="500"
+              frameborder="0"
+              marginheight="0"
+              marginwidth="0"
+              >Loading…</iframe
+            >
+          </div>
+
+          <div class="col-md-1"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+    FAQ SECTION
+============================== -->
+    <section id="faq" class="parallax-section">
+      <div class="container">
+        <div class="row">
+          <!-- Section title
+			================================================== -->
+          <div
+            class="wow fadeInUp col-md-offset-2 col-md-8 col-sm-offset-1 col-sm-10 text-center"
+          >
+            <div class="section-title">
+              <h2>FAQ</h2>
+              <pw>
+                
+              </pw>
+            </div>
+          </div>
+
+          <div
+            class="wow fadeInUp col-md-offset-1 col-md-10 col-sm-offset-1 col-sm-10"
+            data-wow-delay="0.5s"
+          >
+            <div
+              class="panel-group"
+              id="accordion"
+              role="tablist"
+              aria-multiselectable="true"
+            >
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingOne">
+                  <h4 class="panel-title">
+                    <a
+                      class="collapsed"
+                      data-toggle="collapse"
+                      data-parent="#accordion"
+                      href="#collapseOne"
+                      aria-expanded="false"
+                      aria-controls="collapseOne"
+                    >
+                      ¿Pueden registrarse equipos de cualquier universidad en la Categoría Universidad?
+                    </a>
+                  </h4>
+                </div>
+                <div
+                  id="collapseOne"
+                  class="panel-collapse collapse in"
+                  role="tabpanel"
+                  aria-labelledby="headingOne"
+                >
+                  <div class="panel-body">
+                    <p>
+                      ¡Sí, por supuesto! 
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingTwo">
+                  <h4 class="panel-title">
+                    <a
+                      class="collapsed"
+                      data-toggle="collapse"
+                      data-parent="#accordion"
+                      href="#collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="collapseTwo"
+                    >
+                      ¿Puedo asistir sólo como expectador?
+                    </a>
+                  </h4>
+                </div>
+                <div
+                  id="collapseTwo"
+                  class="panel-collapse collapse"
+                  role="tabpanel"
+                  aria-labelledby="headingTwo"
+                >
+                  <div class="panel-body">
+                    <p>
+                    El Festival de robótica es totalmente gratuito y abierto para el público. Puedes
+                    asistir a las Charlas, Stands y por supuesto a ver la Competencia de Robots.
+                    Más adelante comentaremos los requisitos necesarios para ingresar al 
+                    establecimient por las medidas de seguridad.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingThree">
+                  <h4 class="panel-title">
+                    <a
+                      class="collapsed"
+                      data-toggle="collapse"
+                      data-parent="#accordion"
+                      href="#collapseThree"
+                      aria-expanded="false"
+                      aria-controls="collapseThree"
+                    >
+                      ¿Pueden participar equipos extranjeros?
+                    
+                    </a>
+                  </h4>
+                </div>
+                <div
+                  id="collapseThree"
+                  class="panel-collapse collapse"
+                  role="tabpanel"
+                  aria-labelledby="headingThree"
+                >
+                  <div class="panel-body">
+                    <p>
+                      Sólo en la categoría OPEN de la Liga Battlebots.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingFour">
+                  <h4 class="panel-title">
+                    <a
+                      class="collapsed"
+                      data-toggle="collapse"
+                      data-parent="#accordion"
+                      href="#collapseFour"
+                      aria-expanded="false"
+                      aria-controls="collapseFour"
+                    >
+                      ¿Un equipo puede inscribirse a las dos Ligas (Velocistas y Battlebots)?
+                    
+                    </a>
+                  </h4>
+                </div>
+                <div
+                  id="collapseFour"
+                  class="panel-collapse collapse"
+                  role="tabpanel"
+                  aria-labelledby="headingFour"
+                >
+                  <div class="panel-body">
+                    <p>
+                      ¡Sí! Si el equipo desea participar en ambas Ligas no hay ninguna restricción.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+ <!-- =========================
+    VIDEO SECTION
+============================== -->
+<!--
+  <section id="video" class="parallax-section">
+	<div class="container">
+		<div class="row">
+
+			<div class="wow fadeInUp col-md-6 col-sm-10" data-wow-delay="1.3s">
+				<h2>BRC 2019</h2>
+				<h3>Quisque ut libero sapien. Integer tellus nisl, efficitur sed dolor at, vehicula finibus massa. Sed tincidunt metus sed eleifend suscipit.</h3>
+				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet. Dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet consectetuer diam nonummy.</p>
+			</div>
+			<div class="wow fadeInUp col-md-6 col-sm-10" data-wow-delay="1.6s">
+				<div class="embed-responsive embed-responsive-16by9">
+					<iframe class="embed-responsive-item" src="https://www.youtube.com/watch?v=NR4Xq8M1wqY&ab_channel=TimerCronoCronometrajeElectr%C3%B3nico" allowfullscreen></iframe>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</section> 
+ -->
+    <!-- =========================
+    VENUE SECTION
+============================== -->
+    <!-- <section id="venue" class="parallax-section">
+      <div class="container">
+        <div class="row">
+          <div
+            class="wow fadeInLeft col-md-offset-1 col-md-5 col-sm-8"
+            data-wow-delay="0.9s"
+          >
+            <h2>Venue</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+              nonummy nibh euismod tincidunt ut laoreet. Dolore magna aliquam
+              erat volutpat.
+            </p>
+            <h4>New Event</h4>
+            <h4>120 Market Street, Suite 110</h4>
+            <h4>San Francisco, CA 10110</h4>
+            <h4>Tel: 010-020-0120</h4>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- =========================
+    SPONSORS SECTION
+============================== -->
+    <section id="sponsors" class="parallax-section">
+      <div class="container">
+        <div class="row">
+          <div class="wow fadeInUp col-md-12 col-sm-12">
+            <div class="section-title">
+              <h2>ORGANIZADORES</h2>
+              <p>
+                El Festival de Robótica está organizada 
+                por el Fablab U. de Chile, la Comunidad de Robótica y Beauchef Proyecta que se realizará en la
+                Facultad de Ciencias Físicas y Matemáticas de la Universidad de Chile (FCFM). 
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="wow fadeInUp col-md-4 col-sm-4 col-xs-4"
+            data-wow-delay="0.3s"
+          >
+            <img
+             
+            />
+          </div>
+
+                  
+          <div
+            class="wow fadeInUp col-md-4 col-sm-4 col-xs-4"
+            data-wow-delay="0.3s"
+          >
+            <img
+              src="static/images/organizador-fablab.png"
+              class="img-responsive"
+              alt="sponsors"
+            />
+          </div>
+
+          <div
+            class="wow fadeInUp col-md-4 col-sm-4 col-xs-4"
+            data-wow-delay="0.3s"
+          >
+            <img
+              
+            />
+          </div>
+
+          
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="wow fadeInUp col-md-12 col-sm-12">
+            <div class="section-title">
+              <h2>COLABORADORES</h2>
+              <p>
+             
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="wow fadeInUp col-md-4 col-sm-4 col-xs-4"
+            data-wow-delay="0.3s"
+          >
+            <img
+             
+            />
+          </div>
+
+          <div
+            class="wow fadeInUp col-md-4 col-sm-4 col-xs-4"
+            data-wow-delay="0.3s"
+          >
+            <img
+              src="static/images/colaborador-acrc.png"
+              class="img-responsive"
+              alt="participan"
+            />
+          </div>
+
+          
+
+          
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="wow fadeInUp col-md-12 col-sm-12">
+            <div class="section-title">
+              <h2>AUSPICIADORES</h2>
+              <p>
+                
+              </p>
+            </div>
+          </div>
+
+             
+          <div
+            class="wow fadeInUp col-md-3 col-sm-6 col-xs-6"
+            data-wow-delay="0.3s"
+          >
+            <img
+              src="static/images/auspiciador-dimec.png"
+              class="img-responsive"
+              alt="auspiciador"
+            />
+          </div>
+          
+
+
+          <div
+          class="wow fadeInUp col-md-3 col-sm-6 col-xs-6"
+          data-wow-delay="0.3s"
+        >
+          <img
+            src="static/images/auspiciador-ntt.png"
+            class="img-responsive"
+            alt="auspiciador"
+          />
+        </div>
+
+        <div
+          class="wow fadeInUp col-md-3 col-sm-6 col-xs-6"
+          data-wow-delay="0.3s"
+        >
+          <img
+            src="static/images/auspiciador-pcbway.png"
+            class="img-responsive"
+            alt="auspiciador"
+          />
+        </div>
+
+          
+        </div>
+
+    </section>
+
+    <!-- =========================
+    CONTACT SECTION
+============================== -->
+  <!-- 
+   <section id="contact" class="parallax-section">
+      <div class="container">
+        <div class="row">
+          <div
+            class="wow fadeInUp col-md-offset-1 col-md-5 col-sm-6"
+            data-wow-delay="0.6s"
+          >
+            <div class="contact_des">
+              <h3>New Event</h3>
+              <p>
+                Proin sodales convallis urna eu condimentum. Morbi tincidunt
+                augue eros, vitae pretium mi condimentum eget. Suspendisse eu
+                turpis sed elit pretium congue.
+              </p>
+              <p>
+                Mauris at tincidunt felis, vitae aliquam magna. Sed aliquam
+                fringilla vestibulum. Praesent ullamcorper mauris fermentum
+                turpis scelerisque rutrum eget eget turpis.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                diam nonummy nibh euismod tincidunt ut laoreet. Dolore magna
+                aliquam erat volutpat. Lorem ipsum dolor.
+              </p>
+              <a href="#" class="btn btn-danger">DOWNLOAD NOW</a>
+            </div>
+          </div>
+
+          <div class="wow fadeInUp col-md-5 col-sm-6" data-wow-delay="0.9s">
+            <div class="contact_detail">
+              <div class="section-title">
+                <h2>Keep in touch</h2>
+              </div>
+              <form action="#" method="post">
+                <input
+                  name="name"
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder="Name"
+                />
+                <input
+                  name="email"
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="Email"
+                />
+                <textarea
+                  name="message"
+                  rows="5"
+                  class="form-control"
+                  id="message"
+                  placeholder="Message"
+                ></textarea>
+                <div class="col-md-6 col-sm-10">
+                  <input
+                    name="submit"
+                    type="submit"
+                    class="form-control"
+                    id="submit"
+                    value="SEND"
+                  />
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> 
+== -->
+
+    <!-- =========================
+    FOOTER SECTION
+============================== -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12">
+            <p class="wow fadeInUp" data-wow-delay="0.6s">
+              Copyright &copy; 2022 Beauchef Robotics Challenge | Design:
+              <a
+                rel="nofollow"
+                href="http://www.templatemo.com/page/1"
+                target="_parent"
+                >Templatemo</a
+              >
+            </p>
+
+            <ul class="social-icon">
+              
+              
+              <li>
+                <a
+                  href="https://www.instagram.com/brc.chile"
+                  class="fa fa-instagram wow fadeInUp"
+                  data-wow-delay="1.6s"
+                ></a>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back top -->
+    <a href="#back-top" class="go-top"><i class="fa fa-angle-up"></i></a>
+
+    <!-- =========================
+     SCRIPTS
+============================== -->
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.parallax.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/smoothscroll.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/slick-slider.js"></script>
+  </body>
 </html>
