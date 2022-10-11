@@ -40,6 +40,12 @@ h2 {
   text-transform: uppercase;
 }
 
+h2l {
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #a893ff;
+}
+
 h3 {
   line-height: 36px;
 }
@@ -72,6 +78,13 @@ pw {
   font-size: 14px;
   line-height: 24px;
 }
+
+pl {
+  color: #a893ff;
+  font-size: 14px;
+  line-height: 24px;
+}
+
 
 a {
   text-decoration: none !important;
@@ -189,7 +202,7 @@ footer {
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
-  background: none repeat scroll 0 0 #2A3037;
+  background: none repeat scroll 0 0 #2b3038;
 }
 
 .sk-rotating-plane {
@@ -236,7 +249,7 @@ footer {
 .custom-navbar {
   min-height: 80px;
   margin-bottom: 0;
-  background-color: #101010;
+  background-color: #000000;
 }
 
 .custom-navbar .navbar-brand {
@@ -297,7 +310,7 @@ footer {
     background: 0 0;
   }
   .custom-navbar.top-nav-collapse {
-    background: #2A3037;
+    background: #000000;
     padding: 0;
   }
 }
@@ -335,16 +348,19 @@ footer {
   padding-bottom: 32px;
 }
 
+#overview {
+  background: #fffaef;
+}
 /*---------------------------------------
     Detail section
 -----------------------------------------*/
 #detail {
-  background: #2A3037;
+  background: #000000;
   color: #ffffff;
 }
 
 #detail .fa {
-  color: #7eecf0;
+  color: #a893ff;
   font-size: 48px;
 }
 
@@ -367,7 +383,7 @@ footer {
    Leagues section
 -----------------------------------------*/
 #leagues {
-  background: #FFE66D;
+  background: #fffaef;
 }
 
 #leagues h2 {
@@ -481,7 +497,7 @@ footer {
     Register section
 -----------------------------------------*/
 #register {
-  background: #2A3037;
+  background: #000000;
   -webkit-background-size: cover;
   background-size: cover;
   background-position: center center;
