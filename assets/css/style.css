@@ -8,7 +8,7 @@ http://www.templatemo.com/tm-486-new-event
 
 body {
   background: #ffffff;
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Share Tech Mono", normal;
   font-style: normal;
   font-weight: 400;
 }
@@ -35,15 +35,16 @@ h1 {
   letter-spacing: 2px;
 }
 
-h2 {
-  font-size: 30px;
+h10 {
+  font-size: 25px;
   text-transform: uppercase;
+  color: #E84338;
 }
 
 h2l {
   font-size: 30px;
   text-transform: uppercase;
-  color: #a893ff;
+  color: #0E1730;
 }
 
 h3 {
@@ -62,13 +63,13 @@ h7 {
 }
 
 p {
-  color: #707070;
+  color: #0E1730;
   font-size: 14px;
   line-height: 24px;
 }
 
-pk {
-  color: #5FBFBC;
+po {
+  color: #E84338;
   font-size: 14px;
   line-height: 24px;
 }
@@ -79,8 +80,8 @@ pw {
   line-height: 24px;
 }
 
-pl {
-  color: #a893ff;
+py {
+  color: #EACC00;
   font-size: 14px;
   line-height: 24px;
 }
@@ -142,7 +143,7 @@ footer {
   background: transparent;
   border: 2px solid #ffffff;
   border-radius: 0px;
-  color: #ffffff;
+  color: #0E1730;
   font-weight: 600;
   letter-spacing: 1px;
   font-size: 12px;
@@ -156,10 +157,9 @@ footer {
 #intro .btn-danger,
 #leagues .btn-danger,
 #contact .btn-danger {
-  background: #5EBEBB;
-  /* background: #fc3535; */
+  background: #0E1734;
   border-color: transparent;
-  color: #ffffff;
+  color: #EACC00;
 }
 
 #contact .btn {
@@ -181,10 +181,11 @@ footer {
   background: rgb(250, 182, 79);
 }
 
-#intro .btn-default:hover {
+#intro .btn-default:hover,
+#scholarship .btn-default:hover {
   background: #ffffff;
-  color: #333333;
-  border-color: transparent;
+  color: #E84338;
+  border-color: #E5E5E4;
 }
 
 .parallax-section {
@@ -192,60 +193,6 @@ footer {
   background-size: cover !important;
 }
 
-/*---------------------------------------
-    Preloader section
------------------------------------------*/
-.preloader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 99999;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  align-items: center;
-  background: none repeat scroll 0 0 #2b3038;
-}
-
-.sk-rotating-plane {
-  width: 60px;
-  height: 10px;
-  background-color: rgb(90, 183, 189);
-  -webkit-animation: sk-rotatePlane 1.2s infinite ease;
-  animation: sk-rotatePlane 1.2s infinite ease;
-}
-
-@-webkit-keyframes sk-rotatePlane {
-  0% {
-    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg);
-    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
-  }
-  50% {
-    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
-    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
-  }
-  100% {
-    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
-    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
-  }
-}
-
-@keyframes sk-rotatePlane {
-  0% {
-    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg);
-    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
-  }
-  50% {
-    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
-    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
-  }
-  100% {
-    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
-    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
-  }
-}
 
 /*---------------------------------------
     Navigation Links section
@@ -253,11 +200,11 @@ footer {
 .custom-navbar {
   min-height: 80px;
   margin-bottom: 0;
-  background-color: #000000;
+  background-color: #E5E5E4;
 }
 
 .custom-navbar .navbar-brand {
-  color: #ffffff;
+  color: #0E1730;
   font-weight: 600;
   font-size: 3rem;
   line-height: 40px;
@@ -267,7 +214,7 @@ footer {
 }
 
 .custom-navbar .nav li a {
-  color: rgb(255, 255, 255);
+  color: #E84338;
   font-size: 16px;
   font-weight: 500;
   letter-spacing: 0.6px;
@@ -278,7 +225,7 @@ footer {
 
 .custom-navbar .nav li a:hover {
   background: transparent;
-  color: #5FBFBC;
+  color: #0E1730;
 }
 
 .custom-navbar .navbar-nav > li > a:hover,
@@ -288,7 +235,7 @@ footer {
 
 .custom-navbar .nav li.active > a {
   background-color: transparent;
-  color: #f9df19;
+  color: #58585a;
 }
 
 .custom-navbar .navbar-toggle {
@@ -314,7 +261,7 @@ footer {
     background: 0 0;
   }
   .custom-navbar.top-nav-collapse {
-    background: #000000;
+    background: #E5E5E4;
     padding: 0;
   }
 }
@@ -327,7 +274,7 @@ footer {
   -webkit-background-size: cover;
   background-size: cover;
   background-position: center center;
-  color: #ffffff;
+  color: #0E1730;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -353,7 +300,7 @@ footer {
 }
 
 #overview {
-  background: #fffaef;
+  background: #E84338;
 }
 
 /*---------------------------------------
@@ -405,7 +352,7 @@ footer {
 }
 
 #detail .fa {
-  color: #a893ff;
+  color: #EACC00;
   font-size: 48px;
 }
 
@@ -416,11 +363,12 @@ footer {
 #postbrc {
   background: #ffffff;
   color: #000000;
+
 }
 
 #postbrc .fa {
   color: #5EBEBB;
-  font-size: 48px;
+  font-size: 120px;
 }
 
 
@@ -446,7 +394,7 @@ footer {
    Leagues section
 -----------------------------------------*/
 #leagues {
-  background: #fffaef;
+  background: #E5E5E4;
 }
 
 #leagues h2 {
@@ -492,6 +440,15 @@ footer {
 #leagues .leagues-wrapper {
   background: #ffffff;
   padding-bottom: 22px;
+}
+/*---------------------------------------
+    Scholarship section
+-----------------------------------------*/
+#scholarship {
+  background: #E84338;
+  color: #0E1730;
+  height: 40vh;
+  left: 4px;
 }
 
 /*---------------------------------------
