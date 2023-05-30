@@ -111,6 +111,9 @@ a {
 #program,
 #sponsors,
 #contact,
+#postbrc
+#winners
+#photo
 footer {
   padding-top: 10rem;
   padding-bottom: 10rem;
@@ -118,6 +121,7 @@ footer {
 
 #detail,
 #sponsors,
+#photo,
 footer {
   text-align: center;
 }
@@ -351,6 +355,47 @@ footer {
 #overview {
   background: #fffaef;
 }
+
+/*---------------------------------------
+   Photo section
+-----------------------------------------*/
+#photo {
+  background: #fded19;
+}
+
+#photo h2 {
+  color: #fc3535;
+}
+
+#photo h3 {
+  font-size: 18px;
+  margin-bottom: 0px;
+}
+
+#photo h6 {
+  color: #666;
+  margin-top: 4px;
+}
+
+#photo img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+#photo.col-md-3 {
+  display: block;
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  margin-bottom: 22px;
+}
+
+#photo .photo-wrapper {
+  background: #ffffff;
+  padding-bottom: 22px;
+}
+
 /*---------------------------------------
     Detail section
 -----------------------------------------*/
@@ -363,6 +408,24 @@ footer {
   color: #a893ff;
   font-size: 48px;
 }
+
+
+/*---------------------------------------
+    Post BRC section
+-----------------------------------------*/
+#postbrc {
+  background: #ffffff;
+  color: #000000;
+}
+
+#postbrc .fa {
+  color: #5EBEBB;
+  font-size: 48px;
+}
+
+
+
+
 
 /*---------------------------------------
     Categories section
@@ -532,6 +595,73 @@ footer {
   color: #222;
 }
 
+/*---------------------------------------
+   Winners Section
+-----------------------------------------*/
+#winners {
+  background: #000000;
+  /* background: #f9f9f9; */
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+#winners h2 {
+  color: #38270d;
+}
+
+#winners .panel-group {
+  margin-top: 32px;
+}
+
+#winners .panel-group .panel {
+  margin-bottom: 8px;
+}
+
+#winners .panel-default {
+  border: none;
+}
+
+#winners .panel-default > .panel-heading {
+  background: #a893ff;
+  color: #f2f1f1;
+}
+
+#winners .panel-heading {
+  border: none;
+  padding-top: 8px;
+  padding-bottom: 6px;
+}
+
+#winners .panel-default > .panel-heading + .panel-collapse > .panel-body {
+  border-top: none;
+  padding-top: 22px;
+  padding-left: 32px;
+  padding-bottom: 22px;
+}
+
+#winners .panel-heading .panel-title a[data-toggle="collapse"] {
+  font-size: 18px;
+  font-weight: 500;
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 10px 15px;
+}
+
+#winners .panel-heading .panel-title a[data-toggle="collapse"]::after {
+  content: "-";
+  display: block;
+  position: absolute;
+  line-height: 1;
+  right: 1em;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#winners .panel-heading .panel-title a[data-toggle="collapse"].collapsed::after {
+  content: "+";
+}
 
 /*---------------------------------------
    Faq section
