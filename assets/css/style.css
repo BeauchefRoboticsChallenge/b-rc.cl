@@ -626,7 +626,7 @@ footer {
    Faq section
 -----------------------------------------*/
 #faq {
-  background: #5FBFBC;
+  background: #E84338;
   /* background: #f9f9f9; */
   padding-top: 8rem;
   padding-bottom: 8rem;
@@ -649,8 +649,8 @@ footer {
 }
 
 #faq .panel-default > .panel-heading {
-  background: #292F36;
-  color: #f2f1f1;
+  background: #000000;
+  color: #fcfcfc;
 }
 
 #faq .panel-heading {
