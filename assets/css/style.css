@@ -113,6 +113,7 @@ a {
 #categories,
 #program,
 #sponsors,
+#auspices,
 #contact,
 #postbrc
 #winners
@@ -158,6 +159,7 @@ footer {
 
 #intro .btn-danger,
 #leagues .btn-danger,
+#auspicies .btn-danger,
 #contact .btn-danger {
   background: #0E1734;
   border-color: transparent;
@@ -173,6 +175,7 @@ footer {
 }
 
 #leagues .btn-danger:hover,
+#auspicies .btn-danger:hover,
 #intro .btn-danger:hover {
   background: transparent;
   border-color: #ffffff;
@@ -443,6 +446,9 @@ footer {
   background: #ffffff;
   padding-bottom: 22px;
 }
+
+
+
 /*---------------------------------------
     Scholarship section
 -----------------------------------------*/
@@ -514,6 +520,19 @@ footer {
 .tab-content {
   padding-top: 20px;
 }
+
+
+/*---------------------------------------
+    Auspice section
+-----------------------------------------*/
+#auspices {
+  background: #E5E5E4;
+  color: #0E1730;
+  
+  left: 4px;
+}
+
+
 
 /*---------------------------------------
     Register section
@@ -709,9 +728,11 @@ footer {
 /*---------------------------------------
    Sponsors section
 -----------------------------------------*/
-#sponsors img {
-  margin-top: 18px;
+#sponsors {
+  background: #ffffff;
+  color: #0E1730;
   
+  left: 18px;
 }
 
 /*---------------------------------------
