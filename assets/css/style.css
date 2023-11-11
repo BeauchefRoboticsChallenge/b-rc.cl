@@ -47,6 +47,11 @@ h2l {
   color: #0E1730;
 }
 
+h2w {
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #fcfcfc;
+}
 
 
 h3 {
@@ -93,6 +98,7 @@ a {
   text-decoration: none !important;
   outline: none;
 }
+
 
 /*---------------------------------------
     General
