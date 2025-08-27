@@ -28,26 +28,26 @@
       --header-text: var(--cyan);
       --header-border: 1px solid rgba(31,30,61,.12);
 
-      /* Secciones (puedes cambiarlas por sólidos o imágenes) */
+    
       --intro-bg-1: var(--red);
       --intro-text: var(--beige);
       --intro-text-h1: var(--cyan);
       --intro-muted: #e4e2eb;
      
 
-      --about-bg-1: #ffffff; /* cercano a sky, claro */
+      --about-bg-1: #ffffff; 
       --about-text: #06232c;
       --about-muted: #0dc1ee;
 
-      --leagues-bg-1: #45b0da; /* cálido para destacar ligas */
+      --leagues-bg-1: #45b0da; 
       --leagues-text: #000000;
       --leagues-muted: #f6f0e5;
 
-      --faq-bg-1: #1f1e3d; /* suave con tinte índigo */
+      --faq-bg-1: #1f1e3d; 
       --faq-text: #f7c92e;
       --faq-muted: #45b0da;
 
-      --sponsors-bg: #ffffff; /* BLANCO */
+      --sponsors-bg: #ffffff; 
       --sponsors-text: #111827;
       --sponsors-muted: #6b7280;
 
@@ -76,13 +76,14 @@
     .nav{ height:74px; display:flex; align-items:center; justify-content:space-between; gap:12px; color: var(--header-text) }
     .brand{ display:flex; align-items:center; gap:10px; font-weight:800; letter-spacing:.2px }
     .logo{ width:36px; height:36px; border-radius:10px; display:grid; place-items:center; background: var(--brand); color:#fff; font-weight:900 }
-
+    
     /* Pestañas minimalistas (un solo menú, derecha) */
     .tabs{ display:flex; align-items:center; gap:20px; flex-wrap:nowrap; overflow-x:auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
     .tabs::-webkit-scrollbar{ display:none }
     .tab{ padding:10px 0; border:0; border-radius:0; background: transparent; color:#ffffff; font-weight:700; font-size:14px; white-space:nowrap; transition: color .15s ease }
-    .tab:hover{ color: var(--brand) }
-    .tab.active{ color: var(--brand) }
+    .tab{ color:var(--cyan); /* color sin seleccionar */ }
+    .tab:hover{ color: var(--beige) }
+    .tab.active{ color: var(--beige) }
 
     /* Botones rectangulares (SIN degradado) */
     .btn{ display:inline-flex; align-items:center; gap:10px; padding:12px 16px; border:1px solid var(--btn-ghost-border); border-radius:0; cursor:pointer }
@@ -103,8 +104,9 @@
 
     /* Secciones */
     section{ padding: 64px 0 }
-    .wrap{ display:grid; grid-template-columns: 1fr !important; gap:28px; align-items:center }
-    @media (max-width: 920px){ .wrap{ grid-template-columns: 1fr } }
+    .wrap{ display:grid; grid-template-columns: 1.1fr .9fr; gap:28px; align-items:center }
+
+    @media (max-width: 920px){.wrap{ grid-template-columns: 1fr }}
 
     /* Intro */
     #intro{ color: var(--intro-text); background: var(--intro-bg-1) }
@@ -119,12 +121,14 @@
     /* Quiénes */
     #quienes{ color: var(--about-text); background: var(--about-bg-1) }
     #quienes .muted{ color: var(--about-muted) }
-        
+    #quienes .wrap{ grid-template-columns: 1fr 1fr }    
 
 
     /* Ligas */
     #ligas{ color: var(--leagues-text); background: var(--leagues-bg-1) }
-    #ligas .muted{ color: var(--league-muted) }
+    #ligas .wrap{ grid-template-columns: 1fr !important; justify-items: start; }
+    #ligas .wrap article{ max-width: 65ch; }
+
 
     /* FAQ */
     #faq{ color: var(--faq-text); background: var(--faq-bg-1) }
@@ -180,7 +184,7 @@
         /* Ajuste en móvil */
         @media (max-width: 920px){
         #quienes::after{
-        opacity: .1;    
+        opacity: .0;    
         width: 65%;
         right: -10%;    
         }
@@ -205,7 +209,7 @@
         /* Ajuste en móvil */
         @media (max-width: 920px){
         #faq::after{
-        opacity: .1;    
+        opacity: .05;    
         width: 65%;
         right: -10%;    
         }
@@ -239,11 +243,22 @@
     #sponsors{ background: var(--sponsors-bg); color: var(--sponsors-text) }
     #sponsors .muted{ color: var(--sponsors-muted) }
     .sponsor-grid{ display:grid; grid-template-columns: repeat(4, 1fr); gap:30px }
-    @media (max-width: 980px){ .sponsor-grid{ grid-template-columns: repeat(3, 1fr) } }
+    @media (max-width: 920px){ .sponsor-grid{ grid-template-columns: repeat(3, 1fr) } }
     @media (max-width: 640px){ .sponsor-grid{ grid-template-columns: repeat(2, 1fr) } }
     .sponsor{ background:#fff; border:0px solid rgba(17,24,39,.08); height:84px; display:grid; place-items:center }
     .sponsor img{ max-height:92px; filter: grayscale(0%); opacity:.9 }
     .sponsor span{ color:#77806b; font-weight:700 }
+    /* CTA al final de Sponsors */
+    .sponsor-cta{
+      margin-top: clamp(20px, 4vw, 40px);   /* más espaciado respecto a los logos */
+      text-align: center;
+    }
+
+
+
+    
+
+
 
     /* Sin “cajas” visuales */
     .card{ background: transparent; border:0; padding:0 }
@@ -276,6 +291,8 @@
         <a class="tab" href="#faq">FAQ</a>
         <a class="tab" href="#sponsors">Organizadores</a>
       </nav>
+      <!--<button class="menu-btn" id="menuBtn" aria-label="Abrir menú" aria-expanded="false" aria-controls="drawer">…</button>-->
+
     </div>
   </header>
 
@@ -342,7 +359,7 @@
       <div class="wrap" style="grid-template-columns: 1fr important; gap:16px">
         <article class="card">
           <h3 style="margin-top:0">Liga Velocistas</h3>
-          <p class="muted">¡El robot más veloz se lleva la gloria! Debe seguir de manera autónoma la línea blanca de un circuito cerrado en el menor tiempo posible.</p>
+          <p class="--black">¡El robot más veloz se lleva la gloria! Debe seguir de manera autónoma la línea blanca de un circuito cerrado en el menor tiempo posible.</p>
           <ul class="muted">
             <!--
             <li><strong>Categoría Universitaria:</strong> equipos de estudiantes de pregrado de cualquier universidad del país. <em>Sin costo</em>.</li>
@@ -355,7 +372,7 @@
         </article>
         <article class="card">
           <h3 style="margin-top:0">Liga Battlebots</h3>
-          <p class="muted">El robot que cause mayor daño mecánico o la mejor defensa se lleva la gloria.</p>
+          <p class="--black">El robot que cause mayor daño mecánico o la mejor defensa se lleva la gloria.</p>
           <ul class="muted">
             <!--
             <li><strong>Categoría Universitaria:</strong> equipos de estudiantes de pregrado. <em>Sin costo</em>.</li>
@@ -370,7 +387,7 @@
 
       <div class="card" style="margin-top:18px">
         <h3 style="margin-top:0">Espectadores</h3>
-        <p class="muted">¿Externo a la FCFM? ¡Próximamente abriremos las inscripciones para una experiencia robótica inolvidable!</p>
+        <p class="--black">¿Externo a la FCFM? ¡Próximamente abriremos las inscripciones para una experiencia robótica inolvidable!</p>
        
       </div>
     </div>
@@ -446,10 +463,10 @@
           <h2 id="h-sponsors">Organiza & Auspicia</h2>
           <p class="muted"></p>
         </div>
-        <a class="btn yellow" href="mailto:brc.equipo@uchile.cl?subject=Quiero%20auspiciar%20el%20BRC">Quiero auspiciar</a>
+        
       </div>
 
-      <h3 style="margin: 8px 0 10px">Organiza</h3>
+      <h3 style="margin: 8px 0 10px" class="muted" >Organiza</h3>
       <div class="sponsor-grid" style="margin-bottom:18px">
          <div class="sponsor">
           <img src="images/logo/logo-fablab.png" alt="FabLab U. de Chile">
@@ -471,7 +488,7 @@
         </div>
       </div>
 
-      <h3 style="margin: 8px 0 10px">Auspician</h3>
+      <h3 style="margin: 8px 0 10px" class="muted" >Auspician</h3>
       <div class="sponsor-grid">
 
         
@@ -491,8 +508,15 @@
           <img src="images/logo/logo-zambeca.jpg" alt="Zambeca">
         </div>
       </div>
-      
+      <div class="sponsor-cta">
+        <a class="btn primary" href="mailto:brc.equipo@uchile.cl?subject=Quiero%20auspiciar%20el%20BRC">
+          ¿Quieres auspiciar?
+        </a>
+      </div>
+
     </div>
+
+    
   </section>
 
   <!-- ===== Footer ===== -->
@@ -505,7 +529,7 @@
 
   <script>
     // === CONFIG SIMPLE EN JS ==============================================
-    const BRAND = "Beauchef Robotics Challenge"; // se usa en header si editas
+    const BRAND = "BRC"; 
     const LINKS = {
       instagram: "https://www.instagram.com/brc.chile",
       github: "#",
