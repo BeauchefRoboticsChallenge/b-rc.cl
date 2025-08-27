@@ -1,1110 +1,520 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BRC • Landing</title>
+  <meta name="description" content="Festival de Robótica Estudiantil. Competencia con ligas, información para espectadores, becas y auspiciadores. One-page responsiva." />
 
-    <title>Beauchef Robotics Challenge</title>
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, maximum-scale=1"
-    />
+  <style>
+    :root{
+      --font: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      --maxw: 1080px;
 
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="assets/css/animate.css" />
-    <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="assets/css/owl.theme.css" />
-    <link rel="stylesheet" href="assets/css/owl.carousel.css" />
+      /* Paleta entregada */
+      --red: #e10d19;
+      --sky: #45b0da;
+      --cyan: #a2d9fe;
+      --blue: #1f1e3d;
+      --yellow: #f7c92e;
+      --beige: #f3eadb;
+      --black: #1f1e3d;
 
-    <!-- Main css -->
-    <link rel="stylesheet" href="assets/css/style.css" />
+      /* Marca/UI */
+      
+      --btn-primary: var(--red);    /* Botón sólido */
+      --btn-ghost-border: var(--black);
+      --header-bg: var(--red);
+      --header-text: var(--cyan);
+      --header-border: 1px solid rgba(31,30,61,.12);
 
-    <!-- Google Font -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Share+Tech+Mono:400,500,600"
-      rel="stylesheet"
-      type="text/css"
-    />
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=UA-86895502-2"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
-      gtag("config", "UA-86895502-2");
-    </script>
-  </head>
-  <body data-spy="scroll" data-offset="50" data-target=".navbar-collapse">
-
-
-    <!-- =========================
-     NAVIGATION LINKS
-============================== -->
-    <div class="navbar navbar-fixed-top custom-navbar" role="navigation">
-      <div class="container">
-        <!-- navbar header -->
-        <div class="navbar-header">
-          <button
-            class="navbar-toggle"
-            data-toggle="collapse"
-            data-target=".navbar-collapse"
-          >
-            <span class="icon icon-bar"></span>
-            <span class="icon icon-bar"></span>
-            <span class="icon icon-bar"></span>
-          </button>
-          <a href="#intro">
-            <img
-              src="static/images/logo.png"
-              style="height: inherit;"
-              class="img-responsive"
-              alt="BRC"
-            />
-          </a>
-        </div>
-
-        <div class="collapse navbar-collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#intro" class="smoothScroll">Inicio</a></li>
-            <li><a href="#overview" class="smoothScroll">Sobre BRC</a></li>
-            <!--<li> <a href="#program" class="smoothScroll">Calendario</a></li> -->
-            <li><a href="#leagues" class="smoothScroll">Ligas</a></li>
-                        <!--<li><a href="#scholarship" class="smoothScroll">Inscripción</a></li> -->
-            
-            <li><a href="#postbrc" class="smoothScroll">Impacto 2022</a></li>
-            <li><a href="#faq" class="smoothScroll">FAQ</a>
-            </li>
-            <li><a href="#auspices" class="smoothScroll">Auspicio</a></li>
-            <li><a href="#sponsors" class="smoothScroll">Organizadores</a></li>
-            <!-- <li><a href="#contact" class="smoothScroll">Contact</a></li> -->
-            
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <!-- =========================
-    INTRO SECTION
-============================== -->
-    <section id="intro" class="parallax-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 col-sm-12">
-            <h3 class="wow fadeInUp" data-wow-delay="0.9s">
-              14 y 15 de Noviembre 2024
-            </h3>
-            <h1 >
-              Festival de Robótica Estudiantil
-            </h1>
-            <a
-              href="https://www.instagram.com/brc.chile"
-              class="btn btn-lg btn-default smoothScroll "
-              data-wow-delay="2.3s"
-              >Instagram</a
-            >
-            
-            <a
-              href="#leagues"
-              class="btn btn-lg btn-default smoothScroll "
-              data-wow-delay="2.3s"
-              >Inscripciones</a
-            >
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- =========================
-    OVERVIEW SECTION
-============================== -->
-    <section id="overview" class="parallax-section">
-      <div class="container">
-        <div class="row">
-           <!--
-          <div class="wow fadeInUp col-md-6 col-sm-6" data-wow-delay="0.9s">
-            <img
-              src="static/images/brc-2019.JPG"
-              class="img-responsive"
-              alt="Overview"
-            />
-          </div>
-          -->
-
-          <div class="wow fadeInLeft col-md-6 col-sm-10" data-wow-delay="0.6s">
-            <h2>BRC | Competencia de Robótica</h2>
-            <pw>
-              
-              Beauchef Robotics Challenge (BRC) nace el 2018 para incentivar el aprendizaje 
-              y desarrollo de robótica utilizando la competencia como medio. Reúne a escolares, 
-              estudiantes universitarios y profesionales apasionados por esta disciplina en un 
-              festival de dos días que se celebra en la Escuela de Ingeniería de la Universidad 
-              de Chile. 
-            
-            <br>
-            
-              Nuestro objetivo es motivar a las personas a introducirse y experimentar de la 
-              electrónica, fabricación digital y programación dirigido al desarrollo y 
-              construcción de robots.
-
-            <br>
-            
-             Este año se realizará el 14 y 15 de Noviembre en Beauchef 851, Santiago
-            </pw>
-
-            
-              
-            
-            <a href=#leagues> 
-              <p>INSCRIPCIONES ABIERTAS</p>
-            </a>
-
-            
-          </div>
-
-         
-			    <div class="wow fadeInleft col-md-6 col-sm-10" data-wow-delay="1.6s">
-				    <div class="embed-responsive embed-responsive-16by9">
-					   
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/tgAxZ-0XxmM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            
-            </div>
-			    </div>
-
-
-
-        </div>
-      </div>
-    </section>
-
-   
-
-<!-- =========================
-    LEAGUES SECTION
-============================== -->
-
-<section id="leagues" class="parallax-section">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12 col-sm-12 ">
-        <div class="section-title">
-          <h2l>LIGAS DE LA COMPETENCIA DE ROBÓTICA</h2l>
-        </div>
-      </div>
-
-
-  <div class=" col-md-12 col-sm-12" data-wow-delay="0.6s">
-    
-  <div class="row">
-    <div class="col-md-12 col-sm-12" data-wow-delay="0.6s">
-
+      /* Secciones (puedes cambiarlas por sólidos o imágenes) */
+      --intro-bg-1: var(--red);
+      --intro-text: var(--beige);
+      --intro-text-h1: var(--cyan);
+      --intro-muted: #e4e2eb;
      
-      <h10>LIGA VELOCISTAS</h10>
-      <p>
-        ¡El robot más veloz se llevará la gloria!
+
+      --about-bg-1: #ffffff; /* cercano a sky, claro */
+      --about-text: #06232c;
+      --about-muted: #0dc1ee;
+
+      --leagues-bg-1: #45b0da; /* cálido para destacar ligas */
+      --leagues-text: #000000;
+      --leagues-muted: #f6f0e5;
+
+      --faq-bg-1: #1f1e3d; /* suave con tinte índigo */
+      --faq-text: #f7c92e;
+      --faq-muted: #45b0da;
+
+      --sponsors-bg: #ffffff; /* BLANCO */
+      --sponsors-text: #111827;
+      --sponsors-muted: #6b7280;
+
+      --muted: #6b7280;
+      --text-dark: var(--black);
+      --cyan, .text-cyan { color: var(--cyan) !important; }
+
+
+      .with-icon { display:inline-flex; align-items:center; gap:20px; }
+      .icon { width:40px; height:40px; display:block; object-fit:contain; }
+
+    }
+
+    /* Reset mínimo */
+    * { box-sizing: border-box }
+    html{ scroll-behavior: smooth; scroll-padding-top: 84px }
+    body{ margin:0; font-family: var(--font); color:var(--text-dark); background:#ffffff }
+    img{ max-width:100%; height:auto; display:block }
+    a{ color:inherit; text-decoration:none }
+    .visually-hidden{ position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0 }
+
+    .container{ width:min(100%, var(--maxw)); margin-inline:auto; padding: 0 20px }
+
+    /* Header */
+    header{ position: sticky; top:0; z-index:50; backdrop-filter: blur(8px); background: var(--header-bg); border-bottom: var(--header-border) }
+    .nav{ height:74px; display:flex; align-items:center; justify-content:space-between; gap:12px; color: var(--header-text) }
+    .brand{ display:flex; align-items:center; gap:10px; font-weight:800; letter-spacing:.2px }
+    .logo{ width:36px; height:36px; border-radius:10px; display:grid; place-items:center; background: var(--brand); color:#fff; font-weight:900 }
+
+    /* Pestañas minimalistas (un solo menú, derecha) */
+    .tabs{ display:flex; align-items:center; gap:20px; flex-wrap:nowrap; overflow-x:auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+    .tabs::-webkit-scrollbar{ display:none }
+    .tab{ padding:10px 0; border:0; border-radius:0; background: transparent; color:#ffffff; font-weight:700; font-size:14px; white-space:nowrap; transition: color .15s ease }
+    .tab:hover{ color: var(--brand) }
+    .tab.active{ color: var(--brand) }
+
+    /* Botones rectangulares (SIN degradado) */
+    .btn{ display:inline-flex; align-items:center; gap:10px; padding:12px 16px; border:1px solid var(--btn-ghost-border); border-radius:0; cursor:pointer }
+    .btn.primary{ background: var(--btn-primary); color:#fff; border-color: var(--btn-primary) }
+    .btn.ghost{ background: transparent; color: var(--yellow) }
+    .btn.sky{ background: var(--sky); color:#07202b; border-color: var(--sky) }
+    .btn.yellow{ background: var(--yellow); color:#3a2a00; border-color: var(--yellow) }
+    .btn.blue{ background: var(--blue); color:#fef4da; border-color: var(--blue) }
+
+    .chips{ display:flex; gap:8px; flex-wrap:wrap }
+    .chip{ padding:6px 10px; background: rgba(69,176,218,.14); border:1px solid rgba(69,176,218,.3); border-radius:999px; color:#0e7490; font-weight:700; font-size:12px }
+
+    /* Titulares */
+    h1{ font-size: clamp(28px, 4vw, 44px); line-height:1.15; margin:10px 0 }
+    h2{ font-size: clamp(22px, 3vw, 32px); margin:0 0 8px }
+    .kicker{ color: var(--brand); text-transform:uppercase; font-size:12px; font-weight:800; letter-spacing:.7px }
+    .muted{ color:var(--sky) }
+
+    /* Secciones */
+    section{ padding: 64px 0 }
+    .wrap{ display:grid; grid-template-columns: 1.1fr .9fr; gap:28px; align-items:center }
+    @media (max-width: 920px){ .wrap{ grid-template-columns: 1fr } }
+
+    /* Intro */
+    #intro{ color: var(--intro-text); background: var(--intro-bg-1) }
+    #intro.h1{color:var(--intro-text-h1)}
+    #intro .muted{ color: var(--intro-muted) }
+    .intro-col{ display:flex; flex-direction:column; min-height: 620px }
+    .event-logo{ width:min(320px,60%); height:auto; display:block; border:0; background:transparent; margin-bottom:16px }
+    .event-logo img, .logo-img{ width:100%; height:auto; display:block; object-fit:contain }
+
+    .intro-content{ margin-top:auto; padding-top: 8px }
+
+    /* Quiénes */
+    #quienes{ color: var(--about-text); background: var(--about-bg-1) }
+    #quienes .muted{ color: var(--about-muted) }
         
-        El robot deberá seguir, de manera autónoma, la linea blanca de un circuito cerrado 
-        en el menor tiempo posible.
-      </p>
-
-      
-        <ul>
-          <!-- =========================
-          <li><b>Categoría Colegios</b><ps>  (PRIMERA VERSIÓN)</ps></li>
-          <p>Colegios Invitados: 
-                 Colegio Alberto Blest Gana, 
-                 Liceo Experimental Manuel Salas y 
-                 Fundación Mustakis</p>
-           ============================== --> 
-          
-          <li><b>CATEGORÍA UNIVERSITARIA</b></li>
-              <p>
-                Equipos de estudiantes de pregrado de cualquier Universidad del país.
-              </p>
-              <po>
-                Costo de inscripción: GRATUITO
-              </po> 
-
-              
-          <li><b>CATEGORÍA ABIERTA</b></li>
-              <p>
-                Equipos de cualquier procedencia que cumplen con las bases
-                (equipos familiares, amistades y colegios).
-              </p> 
-              <po>
-                Costo de inscripción: 20.000 CLP (a excepción de Colegios Municipales)
-              </po>
-         </ul>
-
-         
-
-        <a
-          href="https://drive.google.com/file/d/1QNUmJ_nMmYmgDtcfLW49soo3VbGmjRzg/view?usp=sharing"
-          class="btn btn-lg btn-default smoothScroll "
-          data-wow-delay="2.3s"
-          >BASES Velocistas</a
-        >
-        
-        
-        <a
-        href="https://docs.google.com/forms/d/e/1FAIpQLSeV31s6Cq6C77kogZkXT0K1BdkzTJMXukZmIJV6e5_v-1cryQ/viewform"
-        class="btn btn-lg btn-default smoothScroll "
-        data-wow-delay="2.3s"
-        >Inscripciones ABIERTAS</a
-      >
-    
-    </div>
-
-      <!-- ========================= 
-      <div class=" col-md-3 col-sm-3" data-wow-delay="0.9s">
-        <a 
-           href="https://latexonline.cc/compile?git=https%3A%2F%2Fgithub.com%2FBeauchefRoboticsChallenge%2FRuleBook&target=rules.tex&command=pdflatex&trackId=1535068395693" 
-           class="btn btn-lg btn-danger smoothScroll "><b>Reglas LIGA VELOCISTAS</b></a>
-      </div>
-      ============================== --> 
-
-    </div>
-    <!--
-    <div class="wow fadeInRight col-md-12 col-sm-12" data-wow-delay="0.9s">
-      
-      <img
-        src="static/images/ligas-velocista.png"
-        class="img-responsive"
-        alt="Overview"
-      />
-    </div>
-  -->
-  </div>
-  <p>
-    :
-  </p>
-  <div class=" col-md-12 col-sm-12" data-wow-delay="0.6s">
-  <div class="row">
-    <div class=" col-md-12 col-sm-12" data-wow-delay="0.6s">
-      <h10 style="text-align: left">LIGA BATTLEBOTS</h10>
-      
-      <p>
-        El robot que cause el mayor daño mecánico a su oponente intentando deshabilitar
-        sus mecanismos de ataque y/o movilización, o 
-        con el mejor método de defensa se lleva la gloria.  
-      </p>
-
-        <ul>
-          <li><b>CATEGORÍA UNIVERSITARIA</b></li>
-              <p>
-                Equipos de estudiantes de pregrado de cualquier Universidad del país.
-              </p> 
-              <po>
-                Costo de inscripción: GRATUITO
-              </po>
-          <li><b>CATEGORÍA ABIERTA</b></li>
-              <p>
-                Equipos de cualquier procedencia que cumplen con las bases
-                (equipos familiares, amistades y colegios).
-              </p> 
-              <po>
-                Costo de inscripción: 20.000 CLP (a excepción de Colegios Municipales)
-              </po>
-         </ul>
-      </p>
-
-      <a
-          href="https://drive.google.com/file/d/1H8S98mS73dOITntv7RxZgNla97hkxDMD/view?usp=sharing"
-          class="btn btn-lg btn-default smoothScroll "
-          data-wow-delay="2.3s"
-          >BASES Battlebots</a
-        >
-
-        <a
-        href="https://docs.google.com/forms/d/e/1FAIpQLSdcZx8jfbeKAQKBgchnHUDhE7aLtTxx1SN4UOZR-j488phXGQ/viewform"
-        class="btn btn-lg btn-default smoothScroll "
-        data-wow-delay="2.3s"
-        >Inscripciones ABIERTAS</a
-      >
 
 
-      <!------------
-      <div class=" col-md-3 col-sm-3" data-wow-delay="0.9s">
-        <a 
-           href="https://drive.google.com/file/d/1BBrPOuczeBsku_rf7SbNJIqkC95a6Uuo/view?usp=share_link" 
-           class="btn btn-lg btn-danger smoothScroll "><b>Reglas LIGA BATTLEBOTS</b></a>
-      </div>
-      ------------>
-    </div>
-    <!--
-    <div class="wow fadeInRight col-md-6 col-sm-6" data-wow-delay="0.9s">
-      <img
-        src="static/images/ligas-battlebot.png"
-        class="img-responsive"
-        alt="Overview"
-      />
-    </div>
-    -->
-  </div>
+    /* Ligas */
+    #ligas{ color: var(--leagues-text); background: var(--leagues-bg-1) }
+    #ligas .muted{ color: var(--league-muted) }
 
-    <!--
-    <div class="wow fadeInRight col-md-6 col-sm-6" data-wow-delay="0.9s">
-      <img
-        src="static/images/ligas-industrial.png"
-        class="img-responsive"
-        alt="Overview"
-      />
-    </div>
-    -->
-  
-  </div>
-</div>
-</div>
-  
-</section>
+    /* FAQ */
+    #faq{ color: var(--faq-text); background: var(--faq-bg-1) }
+    #faq .muted{ color: var(--faq-muted) }
+    details{ background: transparent; border:0; padding:12px 0 }
+    details+details{ border-top:1px solid rgb(255, 47, 47) }
+    summary{ list-style:none; cursor:pointer; font-weight:700; display:flex; align-items:center; justify-content:space-between; gap:10px; padding:4px 0 }
+    summary::-webkit-details-marker{ display:none }
+    .faq-a{ color:var(--faq-muted); margin-top:10px }
 
-   
+ /* Imagenes decoracion*/
+
+        #ligas{
+        position: relative;   
+        z-index: 0;
+        overflow: hidden;    
+        }
+
+        #ligas::after{
+        content:"";
+        position:absolute; top:0; right:0; bottom:0;
+        width: min(30%, 420px);             
+        background: url("images/pato.png") right center / contain no-repeat;
+        pointer-events: none;              
+        z-index: -1;                       
+        }
+
+        /* Ajuste en móvil */
+        @media (max-width: 920px){
+        #ligas::after{
+        opacity: .15;    
+        width: 65%;
+        right: -10%;     
+        }
+        }
 
 
+        #quienes{
+        position: relative;   
+        z-index: 0;
+        overflow: hidden;     
+        }
 
-  <!-- =========================
-    POST BRC SECTION
-============================== -->
+        #quienes::after{
+        content:"";
+        position:absolute; top:0; left:0; bottom:0;
+        width: min(30%, 320px);             
+        background: url("images/bandera-2.png") left center / contain no-repeat;
+        pointer-events: none;               
+        z-index: -1;                        
+        }
 
-<div
-            class="wow fadeInUp col-md-offset-2 col-md-8 col-sm-offset-1 col-sm-10 text-center"
-          >
-            <div class="section-title">
-              <h2>IMPACTO BRC 2022</h2>
-              <pw>
-                
-              </pw>
-            </div>
-          </div>
+        /* Ajuste en móvil */
+        @media (max-width: 920px){
+        #quienes::after{
+        opacity: .15;    
+        width: 65%;
+        right: -10%;    
+        }
+        }
 
-<section id="postbrc" class="parallax-section">
-  <div class="container">
-    <div class="row">
-      <div class="wow fadeInLeft col-md-4 col-sm-4" data-wow-delay="0.3s">
-        <h1>159</h1>
-        <pl>
-          Personas participantes
-      
-        </pl>
-
-       </div> 
-        
        
+        #faq{
+        position: relative;   
+        z-index: 0;
+        overflow: hidden;     
+        }
 
-      <div class="wow fadeInUp col-md-4 col-sm-4" data-wow-delay="0.6s">
-        <h1>39</h1>
-        <pl>
-          Equipos participantes
-        </pl>
-      </div>
+        #faq::after{
+        content:"";
+        position:absolute; top:0; left:0; bottom:0;
+        width: min(30%, 120px);             
+        background: url("images/estrella.png") left center / contain no-repeat;
+        pointer-events: none;               
+        z-index: -1;                        
+        }
 
-      <div class="wow fadeInRight col-md-4 col-sm-4" data-wow-delay="0.9s">
-        
-        <h1> 35 </h1>
-        <pl>
-          Mujeres makers
-        </pl>
-      </div>
-
-      
-      </div>
-    </div>
-  </div>
-</section> 
+        /* Ajuste en móvil */
+        @media (max-width: 920px){
+        #faq::after{
+        opacity: .15;    
+        width: 65%;
+        right: -10%;    
+        }
+        }
 
 
-<section id="postbrc" class="parallax-section">
-  <div class="container">
-    <div class="row">
-      <div class="wow fadeInLeft col-md-4 col-sm-4" data-wow-delay="0.3s">
-        <h1> +800 </h1>
-        <pl>
-          Asistentes            
-        </pl>
-      </div>
+    /* Sponsors  */
+    #sponsors{ background: var(--sponsors-bg); color: var(--sponsors-text) }
+    #sponsors .muted{ color: var(--sponsors-muted) }
+    .sponsor-grid{ display:grid; grid-template-columns: repeat(4, 1fr); gap:30px }
+    @media (max-width: 980px){ .sponsor-grid{ grid-template-columns: repeat(3, 1fr) } }
+    @media (max-width: 640px){ .sponsor-grid{ grid-template-columns: repeat(2, 1fr) } }
+    .sponsor{ background:#fff; border:0px solid rgba(17,24,39,.08); height:84px; display:grid; place-items:center }
+    .sponsor img{ max-height:92px; filter: grayscale(0%); opacity:.9 }
+    .sponsor span{ color:#77806b; font-weight:700 }
 
-      <div class="wow fadeInUp col-md-4 col-sm-4" data-wow-delay="0.6s">
-        <h1>4</h1>
-        <pl>
-          Regiones de Chile
-          <ul>
+    /* Sin “cajas” visuales */
+    .card{ background: transparent; border:0; padding:0 }
 
-            <li type="disc">Metropolitana</li> 
-            <li type="disc">Antofagasta</li>
-            <li type="disc">Bio Bio</li>
-            <li type="disc">Los Lagos</li>
-            </ul>
-        </pl>
-      </div>
-
-      <div class="wow fadeInRight col-md-4 col-sm-4" data-wow-delay="0.9s">
-        <h1>9</h1>
-        <pl>
-          Universidades representadas
-          <ul>
-
-            <li type="disc">UdeChile</li> 
-            <li type="disc">USACH</li>
-            <li type="disc">UTEM</li>
-            <li type="disc">UdeC</li> 
-            <li type="disc">UNAB</li>
-            <li type="disc">UTFSM</li>
-            <li type="disc">INACAP</li> 
-            <li type="disc">U BioBio</li>
-            <li type="disc">U Antofagasta</li>
-
-            </ul>
-          
-
-        </pl>
-
-        
+    .center{ text-align:center }
     
-      
-      </div>
-    </div>
-  </div>
-</section> 
+  </style>
 
-<!-- =========================
-    AUSPICES
-============================== -->
-<!-- =========================
-<section id="auspices" class="parallax-section">
-  <div class="container">
-    <div class="row">
-      <div class="wow fadeInUp col-md-12 col-sm-12">
-        <div class="section-title">
-          <h2>¿Te gustaría Auspiciar nuestro BRC 2024?</h2>
-         
-          <h7>
-            Conoce nuestros planes
-          </h7>
-  
-          <a
-            href="https://drive.google.com/file/d/1zJbXgh5lHIJbuxam3Sify9HgR1xJdgH9/view?usp=sharing"
-            class="btn btn-lg btn-default smoothScroll "
-            data-wow-delay="2.3s"
-            >Ver más información</a
-          >
+  <!-- Fuente opcional -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <a class="visually-hidden" href="#intro"></a>
+
+  <!-- ===== Header ===== -->
+  <header>
+    <div class="container nav" role="navigation" aria-label="Navegación principal">
+      <div class="brand">
+        
+        <span data-brand>BRC</span>
+      </div>
+
+      <!-- ÚNICO MENÚ (derecha) -->
+      <nav class="tabs" id="tabs" aria-label="Menu">
+        <a class="tab" href="#intro">Intro</a>
+        <a class="tab" href="#quienes">Quiénes somos</a>
+        <a class="tab" href="#ligas">Ligas</a>
+        <a class="tab" href="#faq">FAQ</a>
+        <a class="tab" href="#sponsors">Organizadores</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== Intro ===== -->
+  <section id="intro" aria-labelledby="h-intro">
+    <div class="container wrap">
+      
+      <div class="intro-col">
+        <div class="event-logo">
+          <img src="images/logo/logo-brc-beige.png" alt="Logo BRC" class="logo-img">
+        </div>
+        <div class="intro-content">
+          <h1 id="h-intro" class="--cyan">Festival de Robótica Estudiantil</h1>
+
+          <p class="muted">Beauchef Robotics Challenge (BRC) reúne a escolares, estudiantes y profesionales en un festival de dos días para aprender, construir y competir con robots. </p>
+          
+          <div class="kicker">Beauchef 851, Santiago  | 20 y 21 de Noviembre 2025</div>
+          <p>
+            <!--<a class="btn primary" href="#ligas">INSCRIPCIONES</a> -->
+            <a class="btn blue btn-ig" href="https://www.instagram.com/brc.chile" >Instagram</a>
+            
           </p>
+          
         </div>
       </div>
-
-      <div
-        class="wow fadeInUp col-md-4 col-sm-4 col-xs-4"
-        data-wow-delay="0.3s"
-      >
-      <a href="https://drive.google.com/file/d/1zJbXgh5lHIJbuxam3Sify9HgR1xJdgH9/view?usp=sharing">
-        <img
-        src="static/images/ausp-r2d2.png"
-        class="img-responsive"
-        alt="auspices"
-        />
-      </a>
+      <div class="card">
+        <img src="images/brc-intro-4.png" alt="Logo BRC" class="logo-img">
       </div>
-
-              
-      <div
-        class="wow fadeInUp col-md-4 col-sm-4 col-xs-4"
-        data-wow-delay="0.3s"
-      >
-      <a href="https://drive.google.com/file/d/1zJbXgh5lHIJbuxam3Sify9HgR1xJdgH9/view?usp=sharing">
-        <img
-          src="static/images/ausp-T800.png"
-          class="img-responsive"
-          alt="auspices"
-        />
-      </a>
-      </div>
-
-
-      <div
-        class="wow fadeInUp col-md-4 col-sm-4 col-xs-4"
-        data-wow-delay="0.3s"
-      >
-      <a href ="https://drive.google.com/file/d/1zJbXgh5lHIJbuxam3Sify9HgR1xJdgH9/view?usp=sharing">
-        <img
-        src="static/images/ausp-hal.png"
-        class="img-responsive"
-        alt="auspices"
-        />
-      </a>
-      </div>
-
-      
     </div>
-  </div>
   </section>
 
+  <!-- ===== Quiénes somos ===== -->
+  <section id="quienes" aria-labelledby="h-quienes">
+    <div class="container">
+      <h2 id="h-quienes">Competencia de Robótica</h2>
 
-============================== -->
-<!-- =========================
-    WINNERS
-============================== -->
-<section id="winners" class="parallax-section">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12 col-sm-12 ">
-        <div class="section-title">
-        <h7>
-          Ganadores BRC 2022
-        </h7>
-
-        <a
-          href="https://drive.google.com/file/d/1SWx3HJEKoXDwgUtxlY8P8fuqYG0LjK32/view?usp=share_link"
-          class="btn btn-lg btn-default smoothScroll "
-          data-wow-delay="2.3s"
-          >Ver la lista de ganadores</a
-        >
-        </p>
-      </div>
+      <div class="wrap" style="grid-template-columns: 1fr 1fr">
+        <div class="card">
+          <p>Beauchef Robotics Challenge (BRC) nace el 2018 para incentivar el aprendizaje y desarrollo de robótica utilizando la competencia como medio. Reúne a escolares, estudiantes universitarios y profesionales apasionados por esta disciplina en la Escuela de Ingeniería de la Universidad de Chile.</p>
+          <p class="muted">Nuestro objetivo es motivar a las personas a introducirse y experimentar en electrónica, fabricación digital y programación dirigidas al desarrollo y construcción de robots. Este año se realizará el 23 y 24 de Noviembre en Beauchef 851, Santiago.</p>
+          <p>
+            <!--
+            <a class="btn yellow" target="_blank" rel="noopener" href="https://drive.google.com/file/d/1gd07QqrGTuV_5jocc3vJRBdNMXN9F3Wa/view?usp=sharing">Cronograma 2023</a>
+            -->
+          </p>
+        </div>
+        <div class="card">
+          <div style="aspect-ratio:16/9; border:1px dashed rgba(17,24,39,.25); display:grid; place-items:center; color:#6b7280">
+            <iframe style="width:100%; height:100%; border:0" src="https://www.youtube.com/embed/tgAxZ-0XxmM" title="BRC video" allowfullscreen></iframe>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
+  <!-- ===== Ligas ===== -->
+  <section id="ligas" aria-labelledby="h-ligas">
+    <div class="container">
+      
+      <h2 id="h-ligas">LIGAS</h2>
 
+      <p><strong>(Próximamente se abrirán las inscripciones)</strong></p>
 
-    <!-- =========================
-    FAQ SECTION
-============================== -->
-    <section id="faq" class="parallax-section">
-      <div class="container">
-        <div class="row">
-          <!-- Section title
-			================================================== -->
-          <div
-            class="wow fadeInUp col-md-offset-2 col-md-8 col-sm-offset-1 col-sm-10 text-center"
-          >
-            <div class="section-title">
-              <h2>FAQ</h2>
-              <pw>
-                
-              </pw>
-            </div>
-          </div>
-
-          <div
-            class="wow fadeInUp col-md-offset-1 col-md-10 col-sm-offset-1 col-sm-10"
-            data-wow-delay="0.5s"
-          >
-            <div
-              class="panel-group"
-              id="accordion"
-              role="tablist"
-              aria-multiselectable="true"
-            >
-            <div class="panel panel-default">
-              <div class="panel-heading" role="tab" id="headingOne">
-                <h4 class="panel-title">
-                  <a
-                    class="collapsed"
-                    data-toggle="collapse"
-                    data-parent="#accordion"
-                    href="#collapseOne"
-                    aria-expanded="false"
-                    aria-controls="collapseOne"
-                  >
-                    ¿Cuáles son los requisitos para participar?
-                  
-                  </a>
-                </h4>
-              </div>
-
-              <div
-                id="collapseOne"
-                class="panel-collapse collapse"
-                role="tabpanel"
-                aria-labelledby="headingOne"
-              >
-                <div class="panel-body">
-                 
-                  <ul>
-
-                    <li type="disc">En ambas ligas (Velocistas y Battlebots) se permiten equipos de 2 o 3 integrantes.</li>
-                    <li type="disc">Las categorías UNIVERSITARIA <b>no tiene ningún costo</b>. 
-                      Las ABIERTAS sí, <b>el valor por equipo es de 20.000 CLP</b>.</li> 
-                    <li type="disc">Cumplir con las bases que pueden descargarlas en la sección <a href="#leagues">LIGAS</a>.</li> 
-                </div>
-              </div>
-            </div>
-
-              <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingTwo">
-                  <h4 class="panel-title">
-                    <a
-                      class="collapsed"
-                      data-toggle="collapse"
-                      data-parent="#accordion"
-                      href="#collapseTwo"
-                      aria-expanded="false"
-                      aria-controls="collapseTwo"
-                    >
-                      ¿Pueden registrarse equipos de cualquier universidad en la Categoría Universidad?
-                    </a>
-                  </h4>
-                </div>
-                <div
-                  id="collapseTwo"
-                  class="panel-collapse collapse in"
-                  role="tabpanel"
-                  aria-labelledby="headingTwo"
-                >
-                  <div class="panel-body">
-                    <p>
-                      ¡Sí, por supuesto! Pueden ser equipos representando a una universidad en específica 
-                      o equipos de universidades mixtas. La única restricción de esta liga es que sean estudiantes
-                      de pregrado.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingThree">
-                  <h4 class="panel-title">
-                    <a
-                      class="collapsed"
-                      data-toggle="collapse"
-                      data-parent="#accordion"
-                      href="#collapseThree"
-                      aria-expanded="false"
-                      aria-controls="collapseThree"
-                    >
-                      ¿Un equipo puede inscribirse a las dos Ligas (Velocistas y Battlebots)?
-                    
-                    </a>
-                  </h4>
-                </div>
-                <div
-                  id="collapseThree"
-                  class="panel-collapse collapse"
-                  role="tabpanel"
-                  aria-labelledby="headingThree"
-                >
-                  <div class="panel-body">
-                    <p>
-                      ¡Sí! Si el equipo desea participar en ambas Ligas no hay ninguna restricción.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-
-              <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingFour">
-                  <h4 class="panel-title">
-                    <a
-                      class="collapsed"
-                      data-toggle="collapse"
-                      data-parent="#accordion"
-                      href="#collapseFour"
-                      aria-expanded="false"
-                      aria-controls="collapseFour"
-                    >
-                      ¿Existe alguna categoria para colegios?
-                    
-                    </a>
-                  </h4>
-                </div>
-                <div
-                  id="collapseFour"
-                  class="panel-collapse collapse"
-                  role="tabpanel"
-                  aria-labelledby="headingFour"
-                >
-                  <div class="panel-body">
-                    <p>
-                      Los colegios pueden registrarse en la categoría 
-                      <b>ABIERTA</b>. Pueden ser equipos de 2 o 3 integrantes más su tutor/a. El costo de inscripción
-                      es de 20.000 CLP. Si el colegio es Municipal es Gratuito.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingFive">
-                  <h4 class="panel-title">
-                    <a
-                      class="collapsed"
-                      data-toggle="collapse"
-                      data-parent="#accordion"
-                      href="#collapseFive"
-                      aria-expanded="false"
-                      aria-controls="collapseFive"
-                    >
-                      ¿Pueden participar equipos extranjeros?
-                    
-                    </a>
-                  </h4>
-                </div>
-                <div
-                  id="collapseFive"
-                  class="panel-collapse collapse"
-                  role="tabpanel"
-                  aria-labelledby="headingFive"
-                >
-                  <div class="panel-body">
-                    <p>
-                      ¡Sí! Pueden participar en la categoría <b>ABIERTA</b> de las Ligas Velocistas y Battlebots.
-                      (Si tienen dudas con el pago pueden enviarnos un correo al brc.equipo@uchile.cl)
-                    </p>
-                  </div>
-                </div>
-              </div>
-              
-              <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingSix">
-                  <h4 class="panel-title">
-                    <a
-                      class="collapsed"
-                      data-toggle="collapse"
-                      data-parent="#accordion"
-                      href="#collapseSix"
-                      aria-expanded="false"
-                      aria-controls="collapseSix"
-                    >
-                      ¿Puedo asistir sólo como espectador?
-                    </a>
-                  </h4>
-                </div>
-                <div
-                  id="collapseSix"
-                  class="panel-collapse collapse"
-                  role="tabpanel"
-                  aria-labelledby="headingSix"
-                >
-                  <div class="panel-body">
-                    <p>
-                    El Festival de robótica es totalmente gratuito y abierto para el público. Puedes
-                    visitar los Stands y por supuesto ver la Competencia de Robots.
-                    Pronto publicaremos el formulario de registro.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              
-
-
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-
-<!-- =========================
-    WINNERS
-============================== -->
-<section id="winners" class="parallax-section">
-  <div class="container">
-    
-  </div>
-</section>
-
-
-<!-- =========================
-    SPONSORS SECTION
-============================== -->
-
-
-    <section id="sponsors" class="parallax-section">
-      <div class="container">
-        <div class="row">
-          <div class="wow fadeInUp col-md-12 col-sm-12">
-            <div class="section-title">
-              <h2>ORGANIZA:</h2>
-             
-            </div>
-          </div>
-
-          <div
-            class="wow fadeInUp col-md-4 col-sm-4 col-xs-4"
-            data-wow-delay="0.3s"
-          >
-          <a href="http://www.fablab.uchile.cl">
-            <img
-            src="static/images/logo-organizador-fablab.png"
-            class="img-responsive"
-            alt="sponsors"
-            />
-          </a>
-          </div>
-
-                  
-          <div
-            class="wow fadeInUp col-md-4 col-sm-4 col-xs-4"
-            data-wow-delay="0.3s"
-          >
-            <img
-              src="static/images/logo-organizador-comrobot.png"
-              class="img-responsive"
-              alt="sponsors"
-            />
-          </div>
-
-          <div
-            class="wow fadeInUp col-md-4 col-sm-4 col-xs-4"
-            data-wow-delay="0.3s"
-          >
-          <a href="https://beauchefproyecta.cl/">
-            <img
-            src="static/images/logo-organizador-beauchefproyecta.png"
-            class="img-responsive"
-            alt="sponsors"
-            />
-          </a>
-          </div>
-
-          <div
-            class="wow fadeInUp col-md-4 col-sm-4 col-xs-4"
-            data-wow-delay="0.3s"
-          >
-          <a>
-            <img
-            src="static/images/logo-blanco.png"
-            class="img-responsive"
-            alt="sponsors"
-            />
-          </a>
-          </div>
-
-          <div
-            class="wow fadeInUp col-md-4 col-sm-4 col-xs-4"
-            data-wow-delay="0.3s"
-          >
-          <a href="https://openbeauchef.cl/">
-            <img
-            src="static/images/logo-organizador-openbeauchef.png"
-            class="img-responsive"
-            alt="sponsors"
-            />
-          </a>
-          </div>
-        </div>
+      <div class="wrap" style="grid-template-columns: 1fr 1fr; gap:16px">
+        <article class="card">
+          <h3 style="margin-top:0">Liga Velocistas</h3>
+          <p class="muted">¡El robot más veloz se lleva la gloria! Debe seguir de manera autónoma la línea blanca de un circuito cerrado en el menor tiempo posible.</p>
+          <ul class="muted">
+            <!--
+            <li><strong>Categoría Universitaria:</strong> equipos de estudiantes de pregrado de cualquier universidad del país. <em>Sin costo</em>.</li>
+            <li><strong>Categoría Abierta:</strong> equipos de cualquier procedencia (familias, amistades y colegios). <em>20.000 CLP</em> (excepción: colegios municipales).</li>
+            -->
+          </ul>
+          <p>
+            <a class="btn blue" target="_blank" rel="noopener" href="https://drive.google.com/file/d/1q9YrcjTsP4ZIpg53QAxXd7Uvb0pnnO4z/view?usp=drive_link">Bases Velocistas</a>
+          </p>
+        </article>
+        <article class="card">
+          <h3 style="margin-top:0">Liga Battlebots</h3>
+          <p class="muted">El robot que cause mayor daño mecánico o la mejor defensa se lleva la gloria.</p>
+          <ul class="muted">
+            <!--
+            <li><strong>Categoría Universitaria:</strong> equipos de estudiantes de pregrado. <em>Sin costo</em>.</li>
+            <li><strong>Categoría Abierta:</strong> abierta a todo público que cumpla las bases. <em>20.000 CLP</em> (excepción: colegios municipales).</li>
+            -->
+          </ul>
+          <p>
+            <a class="btn blue" target="_blank" rel="noopener" href="https://drive.google.com/file/d/1T2uIRLD93thJegOYz97E0CAUvHG9ChNR/view?usp=drive_link">Bases Battlebots</a>
+          </p>
+        </article>
       </div>
 
-
-
-<!-- =========================
-    COLAB SECTION
-============================== -->
-<!-- =========================
-<section id="colab" class="parallax-section">
-  <div class="container">
-    <div class="row">
-      <div class="wow fadeInUp col-md-12 col-sm-12">
-        <div class="section-title">
-          <h2>COLABORAN:</h2>
-         
-        </div>
+      <div class="card" style="margin-top:18px">
+        <h3 style="margin-top:0">Espectadores</h3>
+        <p class="muted">¿Externo a la FCFM? ¡Próximamente abriremos las inscripciones para una experiencia robótica inolvidable!</p>
+       
       </div>
-
-      <div
-            class="wow fadeInUp col-md-4 col-sm-4 col-xs-4"
-            data-wow-delay="0.3s"
-          >
-          <a>
-            <img
-            src="static/images/logo-blanco.png"
-            class="img-responsive"
-            alt="colab"
-            />
-          </a>
-      </div>
-
-      <div
-        class="wow fadeInUp col-md-4 col-sm-4 col-xs-4"
-        data-wow-delay="0.3s"
-      >
-      <a href="https://www.zambeca.cl/tiendaOficial/">
-        <img
-        src="static/images/colab-zambeca.png"
-        class="img-responsive"
-        alt="colab"
-        />
-      </a>
-      </div>
-
     </div>
-  </div>
-  
-  ============================== -->
-<!-- =========================
-  COLABORADORES
+  </section>
 
-      <div class="container">
-        <div class="row">
-          <div class="wow fadeInUp col-md-12 col-sm-12">
-            <div class="section-title">
-              <h2>COLABORA:</h2>
-              <p>
-             
-              </p>
-            </div>
-          </div>
+  <!-- ===== FAQ ===== -->
+  <section id="faq" aria-labelledby="h-faq">
+    <div class="container">
+      <h2 id="h-faq">Preguntas frecuentes</h2>
 
-          
+      <details>
+        <summary>
+          <span>¿Cuáles son los requisitos para participar?</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 9l6 6 6-6" stroke="#3c4396" stroke-width="2.2" stroke-linecap="round"/></svg>
+        </summary>
+        <div class="faq-a">
+          <ul>
+            <li>En ambas ligas (Velocistas y Battlebots) se permiten equipos de 2 o 3 integrantes.</li>
+            <li>Las categorías <strong>Universitaria</strong> no tienen costo. Las <strong>Abiertas</strong> tienen un valor por equipo de <strong>20.000 CLP</strong>.</li>
+            <li>Debes cumplir con las bases disponibles en la sección <a href="#ligas">Ligas</a>.</li>
+          </ul>
+        </div>
+      </details>
 
-          <div
-            class="wow fadeInUp col-md-4 col-sm-4 col-xs-4"
-            data-wow-delay="0.3s"
-          >
-            <img
-              src="static/images/logo-colaborador-nttdata.png"
-              class="img-responsive"
-              alt="participan"
-            />
-          </div>
+      <details>
+        <summary>
+          <span>¿Pueden registrarse equipos de cualquier universidad en la Categoría Universitaria?</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 9l6 6 6-6" stroke="#3c4396" stroke-width="2.2" stroke-linecap="round"/></svg>
+        </summary>
+        <div class="faq-a">Sí. Pueden representar una universidad específica o ser equipos mixtos; el requisito es ser estudiantes de pregrado.</div>
+      </details>
 
-          <div
-            class="wow fadeInUp col-md-4 col-sm-4 col-xs-4"
-            data-wow-delay="0.3s"
-          >
-            <img
-              src="static/images/logo-colaborador-amtc.png"
-              class="img-responsive"
-              alt="participan"
-            />
-          </div>
+      <details>
+        <summary>
+          <span>¿Un equipo puede inscribirse a las dos ligas?</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 9l6 6 6-6" stroke="#3c4396" stroke-width="2.2" stroke-linecap="round"/></svg>
+        </summary>
+        <div class="faq-a">¡Sí! No hay restricción para participar en Velocistas y Battlebots.</div>
+      </details>
 
-          <div
-            class="wow fadeInUp col-md-4 col-sm-4 col-xs-4"
-            data-wow-delay="0.3s"
-          >
-            <img
-              src="static/images/logo-colaborador-pcbway.png"
-              class="img-responsive"
-              alt="participan"
-            />
-          </div>
+      <details>
+        <summary>
+          <span>¿Existe alguna categoría para colegios?</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 9l6 6 6-6" stroke="#3c4396" stroke-width="2.2" stroke-linecap="round"/></svg>
+        </summary>
+        <div class="faq-a">Sí. Pueden registrarse en la categoría <strong>Abierta</strong> (2 o 3 integrantes + tutor/a). El costo es de <strong>20.000 CLP</strong>. Si el colegio es municipal, es <strong>gratuito</strong>.</div>
+      </details>
 
-          <div
-            class="wow fadeInUp col-md-4 col-sm-4 col-xs-4"
-            data-wow-delay="0.3s"
-          >
-            <img
-              src="static/images/logo-colaborador-mustakis.png"
-              class="img-responsive"
-              alt="participan"
-            />
-          </div>
+      <details>
+        <summary>
+          <span>¿Pueden participar equipos extranjeros?</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 9l6 6 6-6" stroke="#3c4396" stroke-width="2.2" stroke-linecap="round"/></svg>
+        </summary>
+        <div class="faq-a">Sí. En la categoría <strong>Abierta</strong> de las ligas Velocistas y Battlebots. Para dudas de pago: <a href="mailto:brc.equipo@uchile.cl">brc.equipo@uchile.cl</a>.</div>
+      </details>
 
-         
-        <div
-        class="wow fadeInUp col-md-4 col-sm-4 col-xs-4"
-        data-wow-delay="0.3s"
-      >
-        <img
-          src="static/images/logo-colaborador-allrobot.png"
-          class="img-responsive"
-          alt="participan"
-        />
+      <details>
+        <summary>
+          <span>¿Puedo asistir solo como espectador?</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 9l6 6 6-6" stroke="#3c4396" stroke-width="2.2" stroke-linecap="round"/></svg>
+        </summary>
+        <div class="faq-a">Sí. El festival es gratuito y abierto al público. Puedes visitar los stands y ver la competencia de robots.</div>
+      </details>
+    </div>
+  </section>
+
+  <!-- ===== Sponsors ===== -->
+  <section id="sponsors" aria-labelledby="h-sponsors">
+    <div class="container">
+      <div style="display:flex; align-items:flex-end; justify-content:space-between; gap:16px; margin-bottom:12px">
+        <div>
+          <div class="kicker">Sponsors</div>
+          <h2 id="h-sponsors">Organiza & Auspicia</h2>
+          <p class="muted"></p>
+        </div>
+        <a class="btn yellow" href="mailto:brc.equipo@uchile.cl?subject=Quiero%20auspiciar%20el%20BRC">Quiero auspiciar</a>
       </div>
 
-
-              <div
-              class="wow fadeInUp col-md-4 col-sm-4 col-xs-4"
-              data-wow-delay="0.3s"
-            >
-              <img
-                src="static/images/logo-colaborador-timer.png"
-                class="img-responsive"
-                alt="participan"
-              />
-            </div>
-
-            <div
-            class="wow fadeInUp col-md-4 col-sm-4 col-xs-4"
-            data-wow-delay="0.3s"
-          >
-            <img
-              src="static/images/logo-colaborador-dimec.png"
-              class="img-responsive"
-              alt="participan"
-            />
-          </div>
-
-          <div
-          class="wow fadeInUp col-md-4 col-sm-4 col-xs-4"
-          data-wow-delay="0.3s"
-          >
-          <img
-            src="static/images/logo-colaborador-die.png"
-            class="img-responsive"
-            alt="participan"
-          />
-          </div>
-
-          <div
-          class="wow fadeInUp col-md-4 col-sm-4 col-xs-4"
-          data-wow-delay="0.3s"
-        >
-          <img
-            src="static/images/logo-colaborador-fablababg.png"
-            class="img-responsive"
-            alt="participan"
-          />
+      <h3 style="margin: 8px 0 10px">Organiza</h3>
+      <div class="sponsor-grid" style="margin-bottom:18px">
+         <div class="sponsor">
+          <img src="images/logo/logo-fablab.png" alt="FabLab U. de Chile">
         </div>
-
+        <div class="sponsor">
+          <img src="images/logo/logo-openbeauchef.png" alt="OpenBeauchef">
+        </div>
+        <div class="sponsor">
+          <img src="images/logo/logo-comrobot.png" alt="Comrobot">
+        </div>
+         <div class="sponsor">
+          <img src="images/logo/logo-fcfm.png" alt="FCFM">
+        </div>
+        <div class="sponsor">
+          <img src="images/logo/logo-iberolat.png" alt="Iberolat">
+        </div>
+        <div class="sponsor">
+          <img src="images/logo/logo-helice.png" alt="Helice">
         </div>
       </div>
 
-      </div>
-============================== -->
-  
+      <h3 style="margin: 8px 0 10px">Auspician</h3>
+      <div class="sponsor-grid">
 
-    <!-- =========================
-    FOOTER SECTION
-============================== -->
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 col-sm-12">
-            <p> Mail: brc.equipo@uchile.cl</p>
-            
-            <p class="wow fadeInUp" data-wow-delay="0.6s">
-              Copyright &copy; 2024 Beauchef Robotics Challenge  
-              <!--<a
-                rel="nofollow"
-                href="http://www.templatemo.com/page/1"
-                target="_parent"
-                >Templatemo</a
-              >
-              -->
-            </p>
-
-            
-          </div>
+        
+        <div class="sponsor">
+          <img src="images/logo/logo-poirot.png" alt="Poirot">
+        </div>
+         <div class="sponsor">
+          <img src="images/logo/logo-festo.png" alt="Festo">
+        </div>
+        <div class="sponsor">
+          <img src="images/logo/logo-gelab.png" alt="Ge Lab">
+        </div>
+        <div class="sponsor">
+          <img src="images/logo/logo-hubot.png" alt="Hubot">
+        </div>
+        <div class="sponsor">
+          <img src="images/logo/logo-zambeca.jpg" alt="Zambeca">
         </div>
       </div>
-    </footer>
+      
+    </div>
+  </section>
 
-    <!-- Back top -->
-    <a href="#back-top" class="go-top"><i class="fa fa-angle-up"></i></a>
+  <!-- ===== Footer ===== -->
+  <footer style="border-top:1px solid rgba(17,24,39,.08); padding:28px 0; background:#fff">
+    <div class="container" style="display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap">
+      <small>© <span id="year"></span> Beauchef Robotics Challenge • <a href="mailto:brc.equipo@uchile.cl">brc.equipo@uchile.cl</a></small>
+      
+    </div>
+  </footer>
 
-    <!-- =========================
-     SCRIPTS
-============================== -->
-    <script src="assets/js/jquery.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/jquery.parallax.js"></script>
-    <script src="assets/js/owl.carousel.min.js"></script>
-    <script src="assets/js/smoothscroll.js"></script>
-    <script src="assets/js/wow.min.js"></script>
-    <script src="assets/js/custom.js"></script>
-    <script src="assets/js/slick-slider.js"></script>
-  </body>
+  <script>
+    // === CONFIG SIMPLE EN JS ==============================================
+    const BRAND = "Beauchef Robotics Challenge"; // se usa en header si editas
+    const LINKS = {
+      instagram: "https://www.instagram.com/brc.chile",
+      github: "#",
+      youtube: "#"
+    };
+    // =====================================================================
+
+    document.querySelectorAll('[data-brand]').forEach(el => el.textContent = BRAND);
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById('link-ig').href = LINKS.instagram;
+    document.getElementById('link-gh').href = LINKS.github;
+    document.getElementById('link-yt').href = LINKS.youtube;
+
+    // Estado activo de pestañas según sección visible
+    const tabs = Array.from(document.querySelectorAll('header .tabs a'));
+    const ids = ['intro','quienes','ligas','faq','sponsors'];
+    const sections = ids.map(id => document.getElementById(id));
+
+    const setActive = (id) => {
+      tabs.forEach(a => {
+        const match = a.getAttribute('href') === '#' + id;
+        a.classList.toggle('active', match);
+        a.setAttribute('aria-current', match ? 'page' : 'false');
+      });
+    };
+
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(entry => { if(entry.isIntersecting){ setActive(entry.target.id); } });
+    }, { rootMargin: '-40% 0px -50% 0px', threshold: 0.01 });
+
+    sections.forEach(sec => io.observe(sec));
+    if(location.hash){ setActive(location.hash.replace('#','')); }
+  </script>
+</body>
 </html>

@@ -1,0 +1,58 @@
+// Colors
+$bg-color: #292F36;
+
+$dot-color: #545960;
+
+// Dimensions
+$dot-size: 1px;
+$dot-space: 16px;
+
+body {
+    background: linear-gradient(90deg, $bg-color ($dot-space - $dot-size), transparent 1%) center, linear-gradient($bg-color ($dot-space - $dot-size), transparent 1%) center, $dot-color;
+    background-size: $dot-space $dot-space;
+}
+
+body {
+    font-family: monospace;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: auto;
+    padding: 5rem 2rem;
+    max-width: 600px;
+}
+
+h1,
+h2,
+h3 {
+    margin-top: 2rem;
+    text-align: center;
+    color: #99a2af;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    a {
+        text-decoration: none;
+        color: #99a2af;
+        text-align: center;
+    }
+}
+
+.logo {
+    width: 15px;
+}
+
+
+@media screen and (max-width: 600px) {
+    
+    .container img {
+        max-height: 250px;
+    }
+}
