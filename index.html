@@ -175,7 +175,7 @@
         #quienes::after{
         content:"";
         position:absolute; top:0; left:0; bottom:0;
-        width: min(30%, 320px);             
+        width: min(30%, 200px);             
         background: url("images/bandera-2.png") left center / contain no-repeat;
         pointer-events: none;               
         z-index: -1;                        
@@ -253,7 +253,17 @@
       margin-top: clamp(20px, 4vw, 40px);   /* más espaciado respecto a los logos */
       text-align: center;
     }
+    /* Desktop: secciones web en dos columnas donde corresponde */
+    @media (min-width: 921px){
+    #quienes .wrap{ grid-template-columns: 1fr 1fr }
+    }
 
+
+    /* Ligas siempre en una columna (web y móvil) */
+    #ligas .wrap{ grid-template-columns: 1fr !important; justify-items: start; }
+    @media (min-width: 921px){
+    #ligas .wrap article{ max-width: 65ch; }
+    }
 
 
     
