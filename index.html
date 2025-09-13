@@ -274,6 +274,21 @@
     .card{ background: transparent; border:0; padding:0 }
 
     .center{ text-align:center }
+
+
+  /* Ligas: una columna, pero más estrecha (como si fuera la columna izquierda) */
+  @media (min-width: 921px){
+  /* 1 columna siempre, centrada y con ancho limitado */
+  #ligas .wrap{
+    grid-template-columns: 1fr !important;
+    justify-items: left;   /* centrar el contenido */
+  }
+  /* Limita el ancho de TODO lo que está dentro de Ligas */
+  #ligas .wrap > *{
+    width: 100%;
+    max-width: clamp(620px, 62ch, 760px); /* ajusta a tu gusto */
+  }
+  }
     
   </style>
 
@@ -366,45 +381,69 @@
       
       <h2 id="h-ligas">LIGAS</h2>
 
-      <p><strong>(Próximamente se abrirán las inscripciones)</strong></p>
-
+      <p><strong>(Inscripciones abiertas hasta el 29 de octubre)</strong></p>
+      
       <div class="wrap">
         <article class="card">
           <h3 style="margin-top:0">Liga Velocistas</h3>
-          <p class="--black">¡El robot más veloz se lleva la gloria! Debe seguir de manera autónoma la línea blanca de un circuito cerrado en el menor tiempo posible.</p>
-          <ul class="muted">
-            <!--
-            <li><strong>Categoría Universitaria:</strong> equipos de estudiantes de pregrado de cualquier universidad del país. <em>Sin costo</em>.</li>
-            <li><strong>Categoría Abierta:</strong> equipos de cualquier procedencia (familias, amistades y colegios). <em>20.000 CLP</em> (excepción: colegios municipales).</li>
-            -->
-          </ul>
-          <!--
+          <p class="--black">Los robots seguidores de línea autónomo recorren un circuito en el menor tiempo posible.</p>
+          <ul class="--beige">
+            <li><strong>Categoría Univesitaria:</strong> En esta categoría participan equipos cuya totalidad de integrantes pertenezcan a una carrera de pregrado de universidades chilenas. </li>
+            <li><strong>Categoría Abierta:</strong>  Esta categoría es gratuita y abierta a todo público. </li>
+            
           <p>
-            <a class="btn blue" target="_blank" rel="noopener" href="https://drive.google.com/file/d/1q9YrcjTsP4ZIpg53QAxXd7Uvb0pnnO4z/view?usp=drive_link">Bases Velocistas</a>
+            <a class="btn blue" target="_blank" rel="noopener" href="https://docs.google.com/document/d/1z_bpp4pn_jHzU-l1H4VAqGrnxXkJYLFA/edit?tab=t.0#heading=h.1448r8ruzcee">Bases Velocistas</a>
+      
+           <a class="btn primary" href="https://docs.google.com/forms/d/e/1FAIpQLSej9BlCVMoIbDfnFYw4hlTIFcBNSZ_gbvcb8Hk8MoHXjTn-ew/viewform">
+          > Inscripción
+          </a>
           </p>
-          -->
+          </ul>
 
         </article>
+      
         <article class="card">
           <h3 style="margin-top:0">Liga Battlebots</h3>
-          <p class="--black">El robot que cause mayor daño mecánico o la mejor defensa se lleva la gloria.</p>
-          <ul class="muted">
-            <!--
-            <li><strong>Categoría Universitaria:</strong> equipos de estudiantes de pregrado. <em>Sin costo</em>.</li>
-            <li><strong>Categoría Abierta:</strong> abierta a todo público que cumpla las bases. <em>20.000 CLP</em> (excepción: colegios municipales).</li>
-            -->
-          </ul>
-        <!-- 
+          <p class="--black">Se enfrentan 2 robots de batalla en una arena de pelea. </p>
+          <p>  Cada battlebot buscará causar el mayor daño mecánico a su oponente, intentando deshabilitar sus mecanismos de ataque y/o movilización, 
+            mientras defiende o mantiene íntegros sus propios mecanismos de ataque y movilización. </p>
+          <ul class="--black">
+            <li><strong>Categoría Abierta:</strong> abierta y gratuita a todo público que cumpla las bases. </li>
+            
           <p>
-            <a class="btn blue" target="_blank" rel="noopener" href="https://drive.google.com/file/d/1T2uIRLD93thJegOYz97E0CAUvHG9ChNR/view?usp=drive_link">Bases Battlebots</a>
+            <a class="btn blue" target="_blank" rel="noopener" href="https://docs.google.com/document/d/1pCKrpEsDaBeHo2VpK1MUpKqy6GwTnV3L/edit?tab=t.0#heading=h.rcym8uxjojz1">Bases Battlebots</a>
+          
+          <a class="btn primary" href="https://docs.google.com/forms/d/e/1FAIpQLSegI1ElErl3adu1GPs2Tgk2t_JosKgGFhEyK1ppl7V-I8zS4g/viewform">
+          > Inscripción
+          </a>
           </p>
-        -->
+          </ul>
         </article>
-      </div>
+      
+
+      </article>
+      
+        <article class="card">
+          <h3 style="margin-top:0">Liga MiniBots</h3>
+          <p class="--black">Se enfrentan 2 robot telecomandados, y deben destruir los objetivos (3 globos) que estos tienen adheridos a sus chasis, mientras se protegen los objetivos propios. Esta categoría es nueva en esta versión de la BRC y busca hacer más dinámica 
+            la fabricación y programación de cada robot y similarmente reducir el daño que el combate genera en ellos.  </p>
+          <ul class="--black">
+            <li><strong>Categoría Universitaria:</strong> Abierto a todos los equipos cuya totalidad de integrantes pertenezcan a una carrera de pregrado de universidades nacionales (cupos limitados). </li>
+                
+          <p>
+            <a class="btn blue" target="_blank" rel="noopener" href="https://docs.google.com/document/d/1MgyjuDEIhZ3PnYvBYPPAHtrXbid93E3p/edit?tab=t.0#heading=h.30fft71jgxep">Bases Minibots</a>
+         
+          <a class="btn primary" href="https://docs.google.com/forms/d/e/1FAIpQLScfzNfB66uuRyChGzdLZ-CmfNnNnNl3nCi0pfdZYicQu8Pvlg/viewform">
+          > Inscripción
+          </a>
+          </p>
+          </ul>
+        </article>
+     
 
       <div class="card" style="margin-top:18px">
         <h3 style="margin-top:0">Espectadores</h3>
-        <p class="--black">¿Externo a la FCFM? ¡Próximamente abriremos las inscripciones para una experiencia robótica inolvidable!</p>
+        <p class="--black">¿Te gustaría asistir al Festival como asistente? ¿Externo a la FCFM? ¡Próximamente abriremos las inscripciones para una experiencia robótica inolvidable!</p>
        
       </div>
     </div>
@@ -422,7 +461,7 @@
         </summary>
         <div class="faq-a">
           <ul>
-            <li>En ambas ligas (Velocistas y Battlebots) se permiten equipos de 2 o 3 integrantes.</li>
+            <li>En las tres ligas se permiten equipos de 2 o 3 integrantes.</li>
           <!-- 
             <li>Las categorías <strong>Universitaria</strong> no tienen costo. Las <strong>Abiertas</strong> tienen un valor por equipo de <strong>20.000 CLP</strong>.</li> 
           -->
@@ -441,10 +480,10 @@
 
       <details>
         <summary>
-          <span>¿Un equipo puede inscribirse a las dos ligas?</span>
+          <span>¿Un equipo puede inscribirse a las dos o tres ligas?</span>
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 9l6 6 6-6" stroke="#3c4396" stroke-width="2.2" stroke-linecap="round"/></svg>
         </summary>
-        <div class="faq-a">¡Sí! No hay restricción para participar en Velocistas y Battlebots.</div>
+        <div class="faq-a">¡Sí! No hay restricción para participar en las ligas. Tomen en cuenta el programa que se dará aquel día para organizar a sus representantes en el llamado a presentar su robot en cada liga</div>
       </details>
 
       <details>
@@ -468,7 +507,7 @@
           <span>¿Puedo asistir solo como espectador?</span>
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 9l6 6 6-6" stroke="#3c4396" stroke-width="2.2" stroke-linecap="round"/></svg>
         </summary>
-        <div class="faq-a">Sí. El festival es gratuito y abierto al público. Puedes visitar los stands y ver la competencia de robots.</div>
+        <div class="faq-a">Sí. El festival es gratuito y abierto al público. Puedes visitar los stands y ver la competencia de robots. Si eres externo a la Facultad y/o Universidad de Chile debes registrarte en un formulario que se abrirá próximamente.</div>
       </details>
     </div>
   </section>
